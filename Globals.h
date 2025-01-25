@@ -3,7 +3,7 @@
 
 namespace Globals
 {
-	bool bUseBeacons = false;
+	bool bUseBeacons = true;
 	bool bUseAccountID = false; // backend communication, etc...
 
 	bool bIsServerListening = false;

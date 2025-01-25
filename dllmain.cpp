@@ -24,6 +24,10 @@ void hkProcessEvent(UObject* InObject, UFunction* InFunction, void* InParameters
 
 DWORD Initialize(LPVOID)
 {
+    AllocConsole();
+    FILE* File;
+    freopen_s(&File, "CONOUT$", "w+", stdout);
+
     MH_STATUS StatusInitialize = MH_Initialize();
     if (StatusInitialize == MH_OK) {
         Logging::Log(ELogEvent::Info, ELogType::Hook, "Minhook successfully initialized.");
@@ -33,8 +37,28 @@ DWORD Initialize(LPVOID)
         FreeLibraryAndExitThread(GetModuleHandleA(0), 0);
     }
 
-    UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"open Athena_Terrain", nullptr);
+    *(uint8_t*)(Memory::GetAddress(0x290978e) + 7) = 0x74;
+    Logging::Log(ELogEvent::Info, ELogType::Athena, "Matchmaking should now be supported.");
+
+    UKismetSystemLibrary::GetDefaultObj()->ExecuteConsoleCommand(UWorld::GetWorld(), L"open Athena_Terrain", nullptr);
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
+
+    for (uintptr_t FuncToNull : vector{ 0xc61290, 0x2198370, 0xe8e3c0, 0x11d2380 })
+    {
+        uintptr_t func = Memory::GetAddress(FuncToNull);
+
+        DWORD dwProtection;
+        VirtualProtect((PVOID)func, 1, PAGE_EXECUTE_READWRITE, &dwProtection);
+
+        *(uint8_t*)func = 0xC3;
+
+        DWORD dwTemp;
+        VirtualProtect((PVOID)func, 1, dwProtection, &dwTemp);
+        Logging::Log(ELogEvent::Info, ELogType::Athena, "Nulled at 0x%.8x", FuncToNull);
+    }
+
+    *(bool*)(Memory::GetAddress(0x5304204)) = false;
+    Logging::Log(ELogEvent::Info, ELogType::Athena, "GIsClient is now false.");
 
 #ifdef LOG_PROCESSEVENT
     Memory::CreateHook(Memory::GetAddress(Offsets::ProcessEvent), hkProcessEvent, (void**)&oProcessEvent);
