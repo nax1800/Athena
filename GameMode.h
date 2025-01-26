@@ -18,16 +18,17 @@ namespace GameMode
 				Logging::Log(ELogEvent::Info, ELogType::Athena, "Playlist: %s", Playlist->UIDisplayName.ToString().c_str());
 
 				GameState->CurrentPlaylistId = Playlist->PlaylistId;
-				GameState->CurrentPlaylistData = Playlist;
+				GameState->CurrentPlaylistInfo.BasePlaylist = Playlist;
+				GameState->CurrentPlaylistInfo.OverridePlaylist = Playlist;
+				GameState->CurrentPlaylistInfo.PlaylistReplicationKey++;
 				GameState->OnRep_CurrentPlaylistId();
-				GameState->OnRep_CurrentPlaylistData();
-				GameState->WinConditionTimeRemaining = Playlist->TimedWinConditionTime;
-				GameState->OnRep_WinConditionTimeRemaining();
+				GameState->OnRep_CurrentPlaylistInfo();
+
+				GameState->FriendlyFireType = Playlist->FriendlyFireType;
 
 				GameMode->CurrentPlaylistId = Playlist->PlaylistId;
 				GameMode->CurrentPlaylistName = Playlist->PlaylistName;
 
-				GameMode->FriendlyFireType = Playlist->FriendlyFireType;
 				GameMode->FortGameSession->MaxPlayers = Playlist->MaxPlayers;
 				GameMode->FortGameSession->MaxPartySize = Playlist->MaxSocialPartySize;
 			}

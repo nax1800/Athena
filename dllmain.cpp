@@ -24,6 +24,13 @@ void hkProcessEvent(UObject* InObject, UFunction* InFunction, void* InParameters
 
 DWORD Initialize(LPVOID)
 {
+    AllocConsole();
+    FILE* File;
+    freopen_s(&File, "CONOUT$", "w+", stdout);
+    SetConsoleTitleA("Athena - 6.31");
+
+    Logging::Log(ELogEvent::Info, ELogType::Athena, "Made by @nax1800 and @ApfelTeeSaft.");
+
     MH_STATUS StatusInitialize = MH_Initialize();
     if (StatusInitialize == MH_OK) {
         Logging::Log(ELogEvent::Info, ELogType::Hook, "Minhook successfully initialized.");
@@ -33,8 +40,8 @@ DWORD Initialize(LPVOID)
         FreeLibraryAndExitThread(GetModuleHandleA(0), 0);
     }
 
-    *(uint8_t*)(Memory::GetAddress(0x255BB17) + 7) = 0x74;
-    Logging::Log(ELogEvent::Info, ELogType::Athena, "Matchmaking should now be supported.");
+  //  *(uint8_t*)(Memory::GetAddress(0x255BB17) + 7) = 0x74;
+  //  Logging::Log(ELogEvent::Info, ELogType::Athena, "Matchmaking should now be supported.");
 
     UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"open Athena_Terrain", nullptr);
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
