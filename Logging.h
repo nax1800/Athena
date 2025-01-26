@@ -1,27 +1,29 @@
 #pragma once
 #include "framework.h"
+#include <fstream>
+#include <string>
+#include <mutex>
 
 enum ELogType : uint8_t
 {
-	Invalid = 0,
-	Abilities = 1,
-	Actor = 2,
-	Player = 3,
-	Game = 4,
-	Inventory = 5,
-	Kismet = 6,
-	Hook = 7,
-	Athena = 8,
-	ProcessEvent = 9
+    Invalid = 0,
+    Abilities = 1,
+    Actor = 2,
+    Player = 3,
+    Game = 4,
+    Inventory = 5,
+    Kismet = 6,
+    Hook = 7,
+    Athena = 8,
+    ProcessEvent = 9
 };
 
 enum ELogEvent : uint8_t
 {
-	Warning = 1,
-	Info = 2,
-	Error = 3
+    Warning = 1,
+    Info = 2,
+    Error = 3
 };
-
 
 /*
 tbh idek what im doing here but itll be better later
@@ -29,49 +31,58 @@ tbh idek what im doing here but itll be better later
 
 namespace Logging
 {
-	string LogTypeToString(ELogType LogType = ELogType::Invalid)
-	{
-		if (LogType == ELogType::Abilities)
-			return "LogAbilities";
-		else if (LogType == ELogType::Actor)
-			return "LogActor";
-		else if (LogType == ELogType::Player)
-			return "LogPlayer";
-		else if (LogType == ELogType::Game)
-			return "LogGame";
-		else if (LogType == ELogType::Inventory)
-			return "LogInventory";
-		else if (LogType == ELogType::Kismet)
-			return "LogKismet";
-		else if (LogType == ELogType::Hook)
-			return "LogHook";
-		else if (LogType == ELogType::Athena)
-			return "LogAthena";
-		else if (LogType == ELogType::ProcessEvent)
-			return "LogProcessEvent";
+    std::mutex logMutex;
 
-		return "Unknown";
-	}
+    std::string LogTypeToString(ELogType LogType = ELogType::Invalid)
+    {
+        switch (LogType)
+        {
+        case ELogType::Abilities: return "LogAbilities";
+        case ELogType::Actor: return "LogActor";
+        case ELogType::Player: return "LogPlayer";
+        case ELogType::Game: return "LogGame";
+        case ELogType::Inventory: return "LogInventory";
+        case ELogType::Kismet: return "LogKismet";
+        case ELogType::Hook: return "LogHook";
+        case ELogType::Athena: return "LogAthena";
+        case ELogType::ProcessEvent: return "LogProcessEvent";
+        default: return "Unknown";
+        }
+    }
 
-	string LogEventToString(ELogEvent LogEvent)
-	{
-		if (LogEvent == ELogEvent::Warning)
-			return "Warning";
-		else if (LogEvent == ELogEvent::Info)
-			return "Info";
-		else if (LogEvent == ELogEvent::Error)
-			return "Error";
+    std::string LogEventToString(ELogEvent LogEvent)
+    {
+        switch (LogEvent)
+        {
+        case ELogEvent::Warning: return "Warning";
+        case ELogEvent::Info: return "Info";
+        case ELogEvent::Error: return "Error";
+        default: return "Unknown";
+        }
+    }
 
-		return "Unknown";
-	}
+    void Log(ELogEvent LogEvent, ELogType LogType, const char* Format, ...)
+    {
+        std::string Prefix = LogTypeToString(LogType) + ":" + LogEventToString(LogEvent) + ": ";
 
-	void Log(ELogEvent LogEvent, ELogType LogType, const char* Format, ...)
-	{
-		std::string Prefix = "" + LogTypeToString(LogType) + ":" + LogEventToString(LogEvent) + ": ";
-		va_list _ArgList;
-		va_start(_ArgList, Format);
-		std::string FullFormat = Prefix + Format + "\n";
-		vfprintf(stdout, FullFormat.c_str(), _ArgList);
-		va_end(_ArgList);
-	}
+        char Buffer[1024];
+        va_list _ArgList;
+        va_start(_ArgList, Format);
+        vsnprintf(Buffer, sizeof(Buffer), Format, _ArgList);
+        va_end(_ArgList);
+
+        std::string FullMessage = Prefix + Buffer + "\n";
+
+        fprintf(stdout, "%s", FullMessage.c_str());
+
+        {
+            std::lock_guard<std::mutex> lock(logMutex);
+            std::ofstream logFile("Athena.txt", std::ios::app);
+            if (logFile.is_open())
+            {
+                logFile << FullMessage;
+                logFile.close();
+            }
+        }
+    }
 }

@@ -17,6 +17,8 @@ namespace Server
 		if (Globals::bIsServerListening)
 			return;
 
+		Globals::bIsServerListening = true;
+
 		UWorld* World = UWorld::GetWorld();
 		UNetDriver* NetDriver = nullptr;
 
