@@ -60,10 +60,16 @@ namespace GameMode
 		return GameMode->SpawnDefaultPawnAtTransform(NewPlayer, Transform);
 	}
 
+	int hkPickTeam(AFortGameModeAthena* GameMode, uint8 preferredTeam, AActor* Controller)
+	{
+		return 3;
+	}
+
 	void Initialize()
 	{
 		MH_STATUS StatusReadyToStartMatch = Memory::CreateHook(Memory::GetAddress(0xcb45a0), hkReadyToStartMatch, (void**)&oReadyToStartMatch);
 		MH_STATUS StatusSpawnDefaultPawnFor = Memory::CreateHook(Memory::GetAddress(0xcbb040), hkSpawnDefaultPawnFor);
+		MH_STATUS StatusPickTeam = Memory::CreateHook(Memory::GetAddress(0xcb0890), hkPickTeam);
 
 #ifdef LOG_HOOKSTATUS
 		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkReadyToStartMatch Status: %s.", MH_StatusToString(StatusReadyToStartMatch));
