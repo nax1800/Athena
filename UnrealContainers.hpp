@@ -11,6 +11,7 @@
 #include <string>
 #include <stdexcept>
 #include <iostream>
+#include <Windows.h>
 
 namespace UC
 {	

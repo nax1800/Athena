@@ -5,6 +5,7 @@
 #include <format>
 #include <string>
 #include <vector>
+#include <filesystem>
 
 #include "MinHook/include/MinHook.h"
 #include "SDK.hpp"

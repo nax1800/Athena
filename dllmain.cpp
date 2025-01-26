@@ -29,6 +29,11 @@ DWORD Initialize(LPVOID)
     freopen_s(&File, "CONOUT$", "w+", stdout);
     SetConsoleTitleA("Athena - 6.31");
 
+    if (filesystem::exists("Athena.txt"))
+    {
+        filesystem::remove("Athena.txt");
+    }
+
     Logging::Log(ELogEvent::Info, ELogType::Athena, "Made by @nax1800 and @ApfelTeeSaft.");
 
     MH_STATUS StatusInitialize = MH_Initialize();
