@@ -54,18 +54,60 @@ namespace PlayerController
 		return oServerLoadingScreenDropped(PlayerController);
 	}
 
+	void hkServerExecuteInventoryItem(AFortPlayerControllerAthena* PlayerController, FGuid ItemGuid)
+	{
+		FFortItemEntry* FoundItemEntry = InventoryHandler::FindItem(PlayerController, ItemGuid);
+
+		auto Pawn = static_cast<AFortPlayerPawn*>(PlayerController->Pawn);
+		if (!Pawn)
+			return;
+
+		if (!FoundItemEntry)
+			return;
+
+		auto ItemDefinition = static_cast<UFortWeaponItemDefinition*>(FoundItemEntry->ItemDefinition);
+		if (ItemDefinition->IsA(UFortTrapItemDefinition::StaticClass()))
+		{
+			auto DecoDefinition = static_cast<UFortDecoItemDefinition*>(ItemDefinition);
+			Pawn->PickUpActor(Pawn, DecoDefinition);
+			Pawn->CurrentWeapon->ItemEntryGuid = ItemGuid;
+
+			if (auto ContextTrapTool = reinterpret_cast<AFortDecoTool_ContextTrap*>(Pawn->CurrentWeapon))
+				ContextTrapTool->ContextTrapItemDefinition = static_cast<UFortContextTrapItemDefinition*>(ItemDefinition);
+
+			return;
+		}
+
+		Pawn->EquipWeaponDefinition(ItemDefinition, ItemGuid);
+	}
+
+	void (*oEnterAircraft)(AFortPlayerControllerAthena* PlayerController, unsigned __int64 a2);
+	void hkEnterAircraft(AFortPlayerControllerAthena* PlayerController, unsigned __int64 a2)
+	{
+		TArray<FFortItemEntry>& ReplicatedEntries = PlayerController->WorldInventory->Inventory.ReplicatedEntries;
+		for (int i = 0; i < ReplicatedEntries.Num(); i++)
+		{
+			if (static_cast<UFortWorldItemDefinition*>(ReplicatedEntries[i].ItemDefinition)->bCanBeDropped)
+				InventoryHandler::RemoveItem(PlayerController, ReplicatedEntries[i].ItemGuid);
+		}
+
+		return oEnterAircraft(PlayerController, a2);
+	}
+
 	void Initialize()
 	{
 		auto DefaultObject = AAthena_PlayerController_C::GetDefaultObj();
 
 		Memory::VirtualHook(DefaultObject, 0x104, hkServerAcknowledgePossession);
 		Memory::VirtualHook(DefaultObject, 0x252, hkServerReadyToStartMatch, (void**)&oServerReadyToStartMatch);
+		Memory::VirtualHook(DefaultObject, 0x254, hkServerLoadingScreenDropped, (void**)&oServerLoadingScreenDropped);
+		Memory::VirtualHook(DefaultObject, 0x1f4, hkServerExecuteInventoryItem);
 
-		MH_STATUS StatusServerLoadingScreenDropped = Memory::CreateHook(Memory::GetAddress(0x1632760), hkServerLoadingScreenDropped, (void**)&oServerLoadingScreenDropped);
+		MH_STATUS StatusEnterAircraft = Memory::CreateHook(Memory::GetAddress(0xcd81a0), hkEnterAircraft, (void**)&oEnterAircraft);
 
 #ifdef LOG_HOOKSTATUS
-		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkServerLoadingScreenDropped Status: %s.", MH_StatusToString(StatusServerLoadingScreenDropped));
-#endif // LOG_HOOKSTATUS
+		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkEnterAircraft Status: %s.", MH_StatusToString(StatusEnterAircraft));
+#endif
 		
 
 		Logging::Log(ELogEvent::Info, ELogType::Hook, "PlayerController hooks initialized.");
