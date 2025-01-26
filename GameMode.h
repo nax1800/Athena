@@ -12,7 +12,7 @@ namespace GameMode
 		{
 			Globals::bIsPlaylistSetup = true;
 
-			UFortPlaylistAthena* Playlist = nullptr;
+			auto Playlist = StaticFindObject<UFortPlaylistAthena>(L"/Game/Athena/Playlists/Playlist_DefaultSolo.Playlist_DefaultSolo");
 			if (Playlist)
 			{
 				Logging::Log(ELogEvent::Info, ELogType::Athena, "Playlist: %s", Playlist->UIDisplayName.ToString().c_str());

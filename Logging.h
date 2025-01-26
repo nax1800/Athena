@@ -46,7 +46,7 @@ namespace Logging
         case ELogType::Hook: return "LogHook";
         case ELogType::Athena: return "LogAthena";
         case ELogType::ProcessEvent: return "LogProcessEvent";
-        default: return "Unknown";
+        default: return "LogUnknown";
         }
     }
 
