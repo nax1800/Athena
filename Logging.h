@@ -63,7 +63,7 @@ namespace Logging
 
     void Log(ELogEvent LogEvent, ELogType LogType, const char* Format, ...)
     {
-        std::string Prefix = LogTypeToString(LogType) + ":" + LogEventToString(LogEvent) + ": ";
+        std::string Prefix = LogTypeToString(LogType) + ": " + LogEventToString(LogEvent) + ": ";
 
         char Buffer[1024];
         va_list _ArgList;

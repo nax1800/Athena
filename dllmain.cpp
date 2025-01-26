@@ -76,8 +76,9 @@ DWORD Initialize(LPVOID)
     Logging::Log(ELogEvent::Info, ELogType::Hook, "ProcessEvent Logging is enabled.");
 #endif // LOG_PROCESSEVENT
 
-
+    AbilitiesHandler::Initialize();
     GameMode::Initialize();
+    PlayerController::Initialize();
 }
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ulReason, LPVOID lpReserved)

@@ -13,7 +13,16 @@
     <ClInclude Include="SDK.hpp">
       <Filter>SDK</Filter>
     </ClInclude>
-    <ClInclude Include="GameMode.h" />
+    <ClInclude Include="GameMode.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Abilities.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
@@ -54,6 +63,9 @@
     </Filter>
     <Filter Include="SDK">
       <UniqueIdentifier>{105a3d8c-a987-4dc1-a0b1-c3deeff9ce5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{2606b16e-e6a5-4683-a4f7-ed28ae4a935c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

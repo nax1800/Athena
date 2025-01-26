@@ -141,12 +141,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Abilities.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="GameMode.h" />
     <ClInclude Include="Globals.h" />
+    <ClInclude Include="Inventory.h" />
     <ClInclude Include="Logging.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="MinHook\include\MinHook.h" />
+    <ClInclude Include="PlayerController.h" />
     <ClInclude Include="SDK.hpp" />
     <ClInclude Include="Server.h" />
     <ClInclude Include="Spawner.h" />

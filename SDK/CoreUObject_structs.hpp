@@ -355,6 +355,11 @@ public:
 	int32                                         B;                                                 // 0x0004(0x0004)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         C;                                                 // 0x0008(0x0004)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         D;                                                 // 0x000C(0x0004)(Edit, ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+	bool operator==(FGuid& Other)
+	{
+		return A == Other.A && B == Other.B && C == Other.C && D == Other.D;
+	}
 };
 static_assert(alignof(FGuid) == 0x000004, "Wrong alignment on FGuid");
 static_assert(sizeof(FGuid) == 0x000010, "Wrong size on FGuid");
