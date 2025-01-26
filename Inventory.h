@@ -44,25 +44,6 @@ namespace InventoryHandler // for now as a symbol with this name already exists 
 		return Slots >= 5;
 	}
 
-	vector<FFortItemEntry*> FindItems(AFortPlayerController* PlayerController, UFortItemDefinition* ItemDefinition)
-	{
-		vector<FFortItemEntry*> FoundEntries = {};
-		TArray<FFortItemEntry> ReplicatedEntries = PlayerController->WorldInventory->Inventory.ReplicatedEntries;
-		if (!ReplicatedEntries.IsValid())
-			return FoundEntries;
-
-		for (int i = 0; i < ReplicatedEntries.Num(); i++)
-		{
-			if (ReplicatedEntries[i].ItemDefinition == ItemDefinition)
-			{
-				auto Entry = &ReplicatedEntries[i];
-				FoundEntries.push_back(Entry);
-			}
-		}
-
-		return FoundEntries;
-	}
-
 	FFortItemEntry* FindItem(AFortPlayerController* PlayerController, UFortItemDefinition* ItemDefinition)
 	{
 		TArray<FFortItemEntry> ReplicatedEntries = PlayerController->WorldInventory->Inventory.ReplicatedEntries;

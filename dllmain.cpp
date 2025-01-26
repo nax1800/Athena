@@ -40,6 +40,12 @@ DWORD Initialize(LPVOID)
         FreeLibraryAndExitThread(GetModuleHandleA(0), 0);
     }
 
+    Logging::Log(ELogEvent::Info, ELogType::Athena, "Globals::bUseBeacons: %s", Globals::bUseBeacons ? "true" : "false");
+    Logging::Log(ELogEvent::Info, ELogType::Athena, "Globals::bUseAccountID: %s", Globals::bUseAccountID ? "true" : "false");
+    Logging::Log(ELogEvent::Info, ELogType::Athena, "Globals::bNoMCP: %s", Globals::bNoMCP ? "true" : "false");
+
+    Logging::Log(ELogEvent::Info, ELogType::Athena, "Globals::Port: %i", Globals::Port);
+
   //  *(uint8_t*)(Memory::GetAddress(0x255BB17) + 7) = 0x74;
   //  Logging::Log(ELogEvent::Info, ELogType::Athena, "Matchmaking should now be supported.");
 

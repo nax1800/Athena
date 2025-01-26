@@ -74,6 +74,7 @@ namespace GameMode
 #ifdef LOG_HOOKSTATUS
 		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkReadyToStartMatch Status: %s.", MH_StatusToString(StatusReadyToStartMatch));
 		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkSpawnDefaultPawnFor Status: %s.", MH_StatusToString(StatusSpawnDefaultPawnFor));
+		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkPickTeam Status: %s.", MH_StatusToString(StatusPickTeam));
 #endif // LOG_HOOKSTATUS
 
 

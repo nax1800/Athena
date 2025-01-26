@@ -88,22 +88,23 @@ namespace Server
 		return 1;
 	}
 
-	__int64 (*oCollectGarbage)(__int64);
 	__int64 hkCollectGarbage(__int64)
 	{
 		return 0;
 	}
 
-	static bool bMcp = false;
 	__int64 hkNoMCP()
 	{
-		return !bMcp;
+		return Globals::bNoMCP;
 	}
 
 	void (*oDispatchRequest)(__int64 a1, __int64* a2, int a3);
 	void hkDispatchRequest(__int64 a1, __int64* a2, int a3)
 	{
-		*(int*)(__int64(a2) + 0x60) = 3;
+		if (Globals::bNoMCP)
+			return oDispatchRequest(a1, a2, a3);
+
+		*(int*)(__int64(a2) + 0x28) = 3;
 		return oDispatchRequest(a1, a2, 3);
 	}
 
@@ -126,6 +127,7 @@ namespace Server
 		Memory::CreateHook(Memory::GetAddress(0x96e200), hkDispatchRequest, (void**)&oDispatchRequest);
 		Memory::CreateHook(Memory::GetAddress(0x2a62bb0), hkGetMaxTickRate);
 		Memory::CreateHook(Memory::GetAddress(0xf89d40), hkChangeGameSessionId);
+		Memory::CreateHook(Memory::GetAddress(0xfb7e40), hkNoMCP);
 	}
 }
 

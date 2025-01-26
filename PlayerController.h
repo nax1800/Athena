@@ -35,9 +35,7 @@ namespace PlayerController
 			auto PlayerState = static_cast<AFortPlayerStateAthena*>(PlayerController->PlayerState);
 			if (PlayerState)
 			{
-				AbilitiesHandler::Initialize();
-
-				InventoryHandler::Setup(PlayerController);
+				AbilitiesHandler::ApplyAbilities(PlayerState);
 
 				PlayerState->SquadId = (int)PlayerState->TeamIndex - 2;
 				PlayerState->OnRep_PlayerTeam();
@@ -48,6 +46,14 @@ namespace PlayerController
 		return oServerReadyToStartMatch(PlayerController);
 	}
 
+	void (*oServerLoadingScreenDropped)(AFortPlayerControllerAthena* PlayerController);
+	void hkServerLoadingScreenDropped(AFortPlayerControllerAthena* PlayerController)
+	{
+		InventoryHandler::Setup(PlayerController);
+
+		return oServerLoadingScreenDropped(PlayerController);
+	}
+
 	void Initialize()
 	{
 		auto DefaultObject = AAthena_PlayerController_C::GetDefaultObj();
@@ -55,6 +61,12 @@ namespace PlayerController
 		Memory::VirtualHook(DefaultObject, 0x104, hkServerAcknowledgePossession);
 		Memory::VirtualHook(DefaultObject, 0x252, hkServerReadyToStartMatch, (void**)&oServerReadyToStartMatch);
 
+		MH_STATUS StatusServerLoadingScreenDropped = Memory::CreateHook(Memory::GetAddress(0x1632760), hkServerLoadingScreenDropped, (void**)&oServerLoadingScreenDropped);
+
+#ifdef LOG_HOOKSTATUS
+		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkServerLoadingScreenDropped Status: %s.", MH_StatusToString(StatusServerLoadingScreenDropped));
+#endif // LOG_HOOKSTATUS
+		
 
 		Logging::Log(ELogEvent::Info, ELogType::Hook, "PlayerController hooks initialized.");
 	}
