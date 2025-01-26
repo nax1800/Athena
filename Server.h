@@ -65,7 +65,7 @@ namespace Server
 		World->LevelCollections[1].NetDriver = NetDriver;
 		
 		auto vft = *(void***)NetDriver->ReplicationDriver;
-		ReplicateActors = decltype(ReplicateActors)(vft[0x53]);
+		ReplicateActors = decltype(ReplicateActors)(vft[0x56]);
 
 		Logging::Log(ELogEvent::Info, ELogType::Athena, "Server::Listen: Server Listening on port %i", Globals::Port);
 	}
