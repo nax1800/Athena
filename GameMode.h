@@ -62,8 +62,8 @@ namespace GameMode
 
 	void Initialize()
 	{
-		MH_STATUS StatusReadyToStartMatch = Memory::CreateHook(Memory::GetAddress(0x25BAC60), hkReadyToStartMatch, (void**)&oReadyToStartMatch);
-		MH_STATUS StatusSpawnDefaultPawnFor = Memory::CreateHook(Memory::GetAddress(0xA083A0), hkSpawnDefaultPawnFor);
+		MH_STATUS StatusReadyToStartMatch = Memory::CreateHook(Memory::GetAddress(0xcb45a0), hkReadyToStartMatch, (void**)&oReadyToStartMatch);
+		MH_STATUS StatusSpawnDefaultPawnFor = Memory::CreateHook(Memory::GetAddress(0xcbb040), hkSpawnDefaultPawnFor);
 
 #ifdef LOG_HOOKSTATUS
 		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkReadyToStartMatch Status: %s.", MH_StatusToString(StatusReadyToStartMatch));

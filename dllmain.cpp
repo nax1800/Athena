@@ -46,7 +46,7 @@ DWORD Initialize(LPVOID)
     UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"open Athena_Terrain", nullptr);
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
 
-    for (uintptr_t FuncToNull : vector{ 0xa767b0, 0xc22e90, 0xf1c000 })
+    for (uintptr_t FuncToNull : vector{ 0xd16310, 0x233bd47, 0xf89d40, 0x12f4fe0 })
     {
         uintptr_t func = Memory::GetAddress(FuncToNull);
 
@@ -60,7 +60,7 @@ DWORD Initialize(LPVOID)
         Logging::Log(ELogEvent::Info, ELogType::Athena, "Nulled at 0x%.8x", FuncToNull);
     }
 
-    auto ByteToPatch = (uint8_t*)(uint8_t*)(Memory::GetAddress(0x9eb786));
+    auto ByteToPatch = (uint8_t*)(uint8_t*)(Memory::GetAddress(0xc98a16));
     DWORD dwProtection;
     VirtualProtect((PVOID)ByteToPatch, 1, PAGE_EXECUTE_READWRITE, &dwProtection);
     *ByteToPatch = 0x85;
@@ -68,7 +68,7 @@ DWORD Initialize(LPVOID)
     VirtualProtect((PVOID)ByteToPatch, 1, dwProtection, &dwTemp);
     Logging::Log(ELogEvent::Info, ELogType::Athena, "Patched Byte at 0x%.8x", ByteToPatch);
 
-    *(bool*)Memory::GetAddress(0x4a9ca14) = false;
+    *(bool*)Memory::GetAddress(0x5634b5b) = false;
     Logging::Log(ELogEvent::Info, ELogType::Athena, "GIsClient should now be false.");
 
 #ifdef LOG_PROCESSEVENT

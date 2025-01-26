@@ -3,11 +3,11 @@
 
 namespace Server
 {
-	static UNetDriver* (*CreateNetDriver)(UEngine* a1, UWorld* a2, FName a3) = decltype(CreateNetDriver)(Memory::GetAddress(0x2501480));
-	static bool (*InitListen)(UNetDriver* a1, void* InNotify, FURL& LocalURL, bool bReuseAddressAndPort, FString& Error) = decltype(InitListen)(Memory::GetAddress(0x345650));
-	static void (*SetWorld)(UNetDriver* a1, UWorld* a2) = decltype(SetWorld)(Memory::GetAddress(0x22b56f0));
-	static bool (*InitHost)(UObject* Beacon) = decltype(InitHost)(Memory::GetAddress(0x345270));
-	static void (*PauseBeaconRequests)(UObject* Beacon, bool bPause) = decltype(PauseBeaconRequests)(Memory::GetAddress(0xd77010));
+	static UNetDriver* (*CreateNetDriver)(UEngine* a1, UWorld* a2, FName a3) = decltype(CreateNetDriver)(Memory::GetAddress(0));
+	static bool (*InitListen)(UNetDriver* a1, void* InNotify, FURL& LocalURL, bool bReuseAddressAndPort, FString& Error) = decltype(InitListen)(Memory::GetAddress(0x44b700));
+	static void (*SetWorld)(UNetDriver* a1, UWorld* a2) = decltype(SetWorld)(Memory::GetAddress(0x27e2040));
+	static bool (*InitHost)(UObject* Beacon) = decltype(InitHost)(Memory::GetAddress(0x44b320));
+	static void (*PauseBeaconRequests)(UObject* Beacon, bool bPause) = decltype(PauseBeaconRequests)(Memory::GetAddress(0x1149920));
 	static void (*ReplicateActors)(UReplicationDriver* a1);
 
 	static void (*oTickFlush)(UNetDriver* a1);
@@ -112,12 +112,12 @@ namespace Server
 
 	void Initialize()
 	{
-		Memory::CreateHook(Memory::GetAddress(0x22b6ab0), hkTickFlush, (void**)&oTickFlush);
-		Memory::CreateHook(Memory::GetAddress(0x218a4a0), hkKickPlayer);
-		Memory::CreateHook(Memory::GetAddress(0x25151d0), hkCollectGarbage);
-		Memory::CreateHook(Memory::GetAddress(0x2559520), hkUWorld_GetNetMode);
-		Memory::CreateHook(Memory::GetAddress(0x7f2370), hkDispatchRequest, (void**)&oDispatchRequest);
-		Memory::CreateHook(Memory::GetAddress(0x2508650), hkGetMaxTickRate);
+		Memory::CreateHook(Memory::GetAddress(0x27e36a0), hkTickFlush, (void**)&oTickFlush);
+		Memory::CreateHook(Memory::GetAddress(0x26a2e00), hkKickPlayer);
+		// Memory::CreateHook(Memory::GetAddress(0x25151d0), hkCollectGarbage);
+		Memory::CreateHook(Memory::GetAddress(0x35b57b76), hkUWorld_GetNetMode);
+		Memory::CreateHook(Memory::GetAddress(0x96e200), hkDispatchRequest, (void**)&oDispatchRequest);
+		Memory::CreateHook(Memory::GetAddress(0x2a62bb0), hkGetMaxTickRate);
 	}
 }
 

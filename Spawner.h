@@ -81,11 +81,10 @@ namespace Spawner
 		return Params;
 	}
 
-	struct PadHexB0 { char Pad[0xB0]; };
 	template<typename T = AActor>
 	T* SpawnActor(UClass* ActorClass, FTransform SpawnTransform = FTransform(), FActorSpawnParameters SpawnParameters = CreateSpawnParams())
 	{
-		static auto oSpawnActor = (AActor* (*)(UWorld * World, UClass * Class, FTransform const* UserTransformPtr, const FActorSpawnParameters& SpawnParameters))(Memory::GetAddress(0x22456d0));
+		static auto oSpawnActor = (AActor* (*)(UWorld * World, UClass * Class, FTransform const* UserTransformPtr, const FActorSpawnParameters& SpawnParameters))(Memory::GetAddress(0x276a290));
 		if (!oSpawnActor)
 			return nullptr;
 
