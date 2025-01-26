@@ -112,6 +112,11 @@ namespace Server
 		return 30.f;
 	}
 
+	auto hkChangeGameSessionId()
+	{
+		return NULL;
+	}
+
 	void Initialize()
 	{
 		Memory::CreateHook(Memory::GetAddress(0x27e36a0), hkTickFlush, (void**)&oTickFlush);
@@ -120,6 +125,7 @@ namespace Server
 		Memory::CreateHook(Memory::GetAddress(0x35b57b76), hkUWorld_GetNetMode);
 		Memory::CreateHook(Memory::GetAddress(0x96e200), hkDispatchRequest, (void**)&oDispatchRequest);
 		Memory::CreateHook(Memory::GetAddress(0x2a62bb0), hkGetMaxTickRate);
+		Memory::CreateHook(Memory::GetAddress(0xf89d40), hkChangeGameSessionId);
 	}
 }
 
