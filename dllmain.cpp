@@ -27,7 +27,7 @@ DWORD Initialize(LPVOID)
     AllocConsole();
     FILE* File;
     freopen_s(&File, "CONOUT$", "w+", stdout);
-    SetConsoleTitleA("Athena - 6.31");
+    SetConsoleTitleA("Athena - 29.40");
 
     if (filesystem::exists("Athena.txt"))
     {
@@ -54,7 +54,9 @@ DWORD Initialize(LPVOID)
   //  *(uint8_t*)(Memory::GetAddress(0x255BB17) + 7) = 0x74;
   //  Logging::Log(ELogEvent::Info, ELogType::Athena, "Matchmaking should now be supported.");
 
-    UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"open Athena_Terrain", nullptr);
+
+    // ig helios, if not its Asteria
+    UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"open Helios_Terrain", nullptr);
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
 
     for (uintptr_t FuncToNull : vector{ 0xd16310, 0x233bd47, 0xf89d40, 0x12f4fe0 })

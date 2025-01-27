@@ -37,7 +37,7 @@ namespace PlayerController
 			{
 				AbilitiesHandler::ApplyAbilities(PlayerState);
 
-				PlayerState->SquadId = (int)PlayerState->TeamIndex - 2;
+				PlayerState->SquadID = (int)PlayerState->TeamIndex - 2;
 				PlayerState->OnRep_PlayerTeam();
 				PlayerState->OnRep_SquadId();
 			}
@@ -87,8 +87,8 @@ namespace PlayerController
 		TArray<FFortItemEntry>& ReplicatedEntries = PlayerController->WorldInventory->Inventory.ReplicatedEntries;
 		for (int i = 0; i < ReplicatedEntries.Num(); i++)
 		{
-			if (static_cast<UFortWorldItemDefinition*>(ReplicatedEntries[i].ItemDefinition)->bCanBeDropped)
-				InventoryHandler::RemoveItem(PlayerController, ReplicatedEntries[i].ItemGuid);
+			// if (static_cast<UFortWorldItemDefinition*>(ReplicatedEntries[i].ItemDefinition)->bCanBeDropped)
+			InventoryHandler::RemoveItem(PlayerController, ReplicatedEntries[i].ItemGuid);
 		}
 
 		return oEnterAircraft(PlayerController, a2);
