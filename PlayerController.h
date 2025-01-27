@@ -7,21 +7,22 @@ namespace PlayerController
 	void hkServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerController, APawn* Pawn)
 	{
 		auto PlayerState = static_cast<AFortPlayerStateAthena*>(PlayerController->PlayerState);
-		auto FortPawn = static_cast<APlayerPawn_Athena_C*>(Pawn);
+		auto FortPawn = static_cast<AFortPlayerPawnAthena*>(Pawn);
 
 		PlayerController->AcknowledgedPawn = FortPawn;
 		if (!PlayerState || !FortPawn)
 			return;
 
-		auto& CustomizationLoadout = PlayerController->CustomizationLoadout;
+		// TArray<FFortItemEntry>& CustomizationLoadout = PlayerController->CustomizationLoadout;
 
-		if (!CustomizationLoadout.Character || !CustomizationLoadout.Character->HeroDefinition)
-			return;
+		//if (!CustomizationLoadout.Character || !CustomizationLoadout.Character->HeroDefinition)
+		//	return;
 
-		FortPawn->CustomizationLoadout = CustomizationLoadout;
-		FortPawn->OnRep_CustomizationLoadout();
+		// not needed ig?
+		// FortPawn->CustomizationLoadout = CustomizationLoadout;
+		// FortPawn->OnRep_CustomizationLoadout();
 
-		PlayerState->HeroType = CustomizationLoadout.Character->HeroDefinition;
+		// PlayerState->HeroType = CustomizationLoadout.Character->HeroDefinition;
 		PlayerState->OnRep_HeroType();
 
 		ApplyCharacterCustomization(PlayerState, FortPawn);
@@ -49,54 +50,55 @@ namespace PlayerController
 	void (*oServerLoadingScreenDropped)(AFortPlayerControllerAthena* PlayerController);
 	void hkServerLoadingScreenDropped(AFortPlayerControllerAthena* PlayerController)
 	{
-		InventoryHandler::Setup(PlayerController);
+		// InventoryHandler::Setup(PlayerController);
 
 		return oServerLoadingScreenDropped(PlayerController);
 	}
 
-	void hkServerExecuteInventoryItem(AFortPlayerControllerAthena* PlayerController, FGuid ItemGuid)
-	{
-		FFortItemEntry* FoundItemEntry = InventoryHandler::FindItem(PlayerController, ItemGuid);
+	//void hkServerExecuteInventoryItem(AFortPlayerControllerAthena* PlayerController, FGuid ItemGuid, FGuid TrackerGuid)
+	//{
+	//	FFortItemEntry* FoundItemEntry = InventoryHandler::FindItem(PlayerController, ItemGuid);
 
-		auto Pawn = static_cast<AFortPlayerPawn*>(PlayerController->Pawn);
-		if (!Pawn)
-			return;
+	//	auto Pawn = static_cast<AFortPlayerPawn*>(PlayerController->Pawn);
+	//	if (!Pawn)
+	//		return;
 
-		if (!FoundItemEntry)
-			return;
+	//	if (!FoundItemEntry)
+	//		return;
 
-		auto ItemDefinition = static_cast<UFortWeaponItemDefinition*>(FoundItemEntry->ItemDefinition);
-		if (ItemDefinition->IsA(UFortTrapItemDefinition::StaticClass()))
-		{
-			auto DecoDefinition = static_cast<UFortDecoItemDefinition*>(ItemDefinition);
-			Pawn->PickUpActor(Pawn, DecoDefinition);
-			Pawn->CurrentWeapon->ItemEntryGuid = ItemGuid;
+	//	auto ItemDefinition = static_cast<UFortWeaponItemDefinition*>(FoundItemEntry->ItemDefinition);
+	//	if (ItemDefinition->IsA(UFortTrapItemDefinition::StaticClass()))
+	//	{
+	//		auto DecoDefinition = static_cast<UFortDecoItemDefinition*>(ItemDefinition);
+	//		Pawn->PickUpActor(Pawn, DecoDefinition);
+	//		Pawn->CurrentWeapon->ItemEntryGuid = ItemGuid;
+	//		Pawn->CurrentWeapon->TrackerGuid = TrackerGuid;
 
-			if (auto ContextTrapTool = reinterpret_cast<AFortDecoTool_ContextTrap*>(Pawn->CurrentWeapon))
-				ContextTrapTool->ContextTrapItemDefinition = static_cast<UFortContextTrapItemDefinition*>(ItemDefinition);
+	//		if (auto ContextTrapTool = reinterpret_cast<AFortDecoTool_ContextTrap*>(Pawn->CurrentWeapon))
+	//			ContextTrapTool->ContextTrapItemDefinition = static_cast<UFortContextTrapItemDefinition*>(ItemDefinition);
 
-			return;
-		}
+	//		return;
+	//	}
 
-		Pawn->EquipWeaponDefinition(ItemDefinition, ItemGuid);
-	}
+	//	Pawn->EquipWeaponDefinition(ItemDefinition, ItemGuid, TrackerGuid, false);
+	//}
 
 	void (*oEnterAircraft)(AFortPlayerControllerAthena* PlayerController, unsigned __int64 a2);
 	void hkEnterAircraft(AFortPlayerControllerAthena* PlayerController, unsigned __int64 a2)
 	{
-		TArray<FFortItemEntry>& ReplicatedEntries = PlayerController->WorldInventory->Inventory.ReplicatedEntries;
-		for (int i = 0; i < ReplicatedEntries.Num(); i++)
-		{
-			// if (static_cast<UFortWorldItemDefinition*>(ReplicatedEntries[i].ItemDefinition)->bCanBeDropped)
-			InventoryHandler::RemoveItem(PlayerController, ReplicatedEntries[i].ItemGuid);
-		}
+		//TArray<FFortItemEntry>& ReplicatedEntries = PlayerController->WorldInventory->Inventory.ReplicatedEntries;
+		//for (int i = 0; i < ReplicatedEntries.Num(); i++)
+		//{
+		//	if (static_cast<UFortWorldItemDefinition*>(ReplicatedEntries[i].ItemDefinition)->bCanBeDropped)
+		//	InventoryHandler::RemoveItem(PlayerController, ReplicatedEntries[i].ItemGuid);
+		//}
 
 		return oEnterAircraft(PlayerController, a2);
 	}
 
 	void Initialize()
 	{
-		auto DefaultObject = AAthena_PlayerController_C::GetDefaultObj();
+		auto DefaultObject = AFortPlayerControllerAthena::GetDefaultObj();
 
 		Memory::VirtualHook(DefaultObject, 0x104, hkServerAcknowledgePossession);
 		Memory::VirtualHook(DefaultObject, 0x252, hkServerReadyToStartMatch, (void**)&oServerReadyToStartMatch);
