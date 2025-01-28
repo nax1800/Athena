@@ -175,58 +175,29 @@ namespace PlayerController
 		BuildingActorToEdit->OnRep_EditingPlayer();
 	}
 
+	static ABuildingSMActor* (*oBuildingSMActorReplaceBuildingActor)(ABuildingSMActor*, __int64, UClass*, int, int, uint8_t, AFortPlayerController*) = decltype(oBuildingSMActorReplaceBuildingActor)(Memory::GetAddress(0xdad4c0));
+	void (*oServerEditBuildingActor)(AFortPlayerController* PlayerController, ABuildingSMActor* BuildingActorToEdit, UClass* NewBuildingClass, uint8 RotationIterations, bool bMirrored);
 	void hkServerEditBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* BuildingActorToEdit, UClass* NewBuildingClass, uint8 RotationIterations, bool bMirrored)
 	{
 		if (!PlayerController)
-			return;
+			return oServerEditBuildingActor(PlayerController, BuildingActorToEdit, NewBuildingClass, RotationIterations, bMirrored);
 
 		auto PlayerState = static_cast<AFortPlayerStateAthena*>(PlayerController->PlayerState);
 		if (!PlayerState)
-			return;
+			return oServerEditBuildingActor(PlayerController, BuildingActorToEdit, NewBuildingClass, RotationIterations, bMirrored);
 
-		if (!BuildingActorToEdit || !NewBuildingClass)
-			return;
-
-		FVector BuildLocation = BuildingActorToEdit->K2_GetActorLocation();
-		FRotator BuildRotation = BuildingActorToEdit->K2_GetActorRotation();
-		FVector BuildForwardVector = BuildingActorToEdit->GetActorForwardVector();
-		FVector BuildRightVector = BuildingActorToEdit->GetActorRightVector();
-
-		int yaw = round(float((int(BuildRotation.Yaw) + 360) % 360) / 10) * 10;
-
-		if (BuildingActorToEdit->BuildingType != EFortBuildingType::Wall)
+		if (BuildingActorToEdit && NewBuildingClass)
 		{
-			switch (RotationIterations)
+			FVector BuildLocation = BuildingActorToEdit->K2_GetActorLocation();
+
+			float HealthPercent = BuildingActorToEdit->GetHealthPercent();
+			if (auto BuildingActor = oBuildingSMActorReplaceBuildingActor(BuildingActorToEdit, 1, NewBuildingClass, BuildingActorToEdit->GetCurrentBuildingLevel(), RotationIterations, bMirrored, PlayerController))
 			{
-			case 1:
-				BuildLocation = BuildLocation + BuildForwardVector * 256.0f + BuildRightVector * 256.0f;
-				break;
-			case 2:
-				BuildLocation = BuildLocation + BuildRightVector * 512.0f;
-				break;
-			case 3:
-				BuildLocation = BuildLocation + BuildForwardVector * -256.0f + BuildRightVector * 256.0f;
+				BuildingActor->bPlayerPlaced = true;
 			}
 		}
 
-		BuildRotation.Yaw = yaw + 90 * RotationIterations;
-		float HealthPercent = BuildingActorToEdit->GetHealthPercent();
-
-		BuildingActorToEdit->SilentDie();
-		auto NewBuildingActor = Spawner::SpawnActor<ABuildingSMActor>(NewBuildingClass, BuildLocation, BuildRotation);
-		if (!NewBuildingActor)
-			return;
-
-		if (!BuildingActorToEdit->bIsInitiallyBuilding)
-			NewBuildingActor->ForceBuildingHealth(NewBuildingActor->GetMaxHealth() * HealthPercent);
-
-		NewBuildingActor->InitializeKismetSpawnedBuildingActor(NewBuildingActor, PlayerController, true);
-		NewBuildingActor->bPlayerPlaced = true;
-		NewBuildingActor->Team = PlayerState->TeamIndex;
-		NewBuildingActor->OnRep_Team();
-
-		if (!NewBuildingActor->IsStructurallySupported())
-			NewBuildingActor->K2_DestroyActor();
+		return oServerEditBuildingActor(PlayerController, BuildingActorToEdit, NewBuildingClass, RotationIterations, bMirrored);
 	}
 
 	void hkServerEndEditingBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* BuildingActorToStopEditing)
@@ -259,7 +230,7 @@ namespace PlayerController
 		Memory::VirtualHook(DefaultObject, 0x254, hkServerLoadingScreenDropped, (void**)&oServerLoadingScreenDropped);
 		Memory::VirtualHook(DefaultObject, 0x1f4, hkServerExecuteInventoryItem);
 		Memory::VirtualHook(DefaultObject, 0x212, hkServerCreateBuildingActor);
-		Memory::VirtualHook(DefaultObject, 0x214, hkServerEditBuildingActor);
+		Memory::VirtualHook(DefaultObject, 0x214, hkServerEditBuildingActor, (void**)&oServerEditBuildingActor);
 		Memory::VirtualHook(DefaultObject, 0x218, hkServerBeginEditingBuildingActor);
 		Memory::VirtualHook(DefaultObject, 0x216, hkServerEndEditingBuildingActor);
 

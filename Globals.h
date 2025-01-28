@@ -5,7 +5,7 @@ namespace Globals
 {
 	bool bUseBeacons = true;
 	bool bUseAccountID = false; // backend communication, etc...
-	bool bNoMCP = true;
+	bool bNoMCP = false;
 
 	bool bIsServerListening = false;
 	bool bIsPlaylistSetup = false;
