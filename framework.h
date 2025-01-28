@@ -44,10 +44,12 @@ static T* StaticLoadObject(wstring ObjectName, UClass* ObjectClass = nullptr)
 
 #include "Inventory.h"
 
+#include "Utils.h"
 
 #include "Abilities.h"
 
 #include "AI.h"
+#include "Actor.h"
 #include "GameMode.h"
 #include "PlayerController.h"
 #include "Quests.h"

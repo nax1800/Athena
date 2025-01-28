@@ -156,6 +156,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Abilities.h" />
+    <ClInclude Include="Actor.h" />
     <ClInclude Include="AI.h" />
     <ClInclude Include="Frame.h" />
     <ClInclude Include="framework.h" />
@@ -170,6 +171,7 @@
     <ClInclude Include="SDK.hpp" />
     <ClInclude Include="Server.h" />
     <ClInclude Include="Spawner.h" />
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />

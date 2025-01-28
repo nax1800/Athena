@@ -28,6 +28,10 @@
     </ClInclude>
     <ClInclude Include="Frame.h" />
     <ClInclude Include="AI.h" />
+    <ClInclude Include="Actor.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />

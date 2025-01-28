@@ -58,6 +58,29 @@ namespace GameMode
 			GameMode->WarmupRequiredPlayerCount = 1;
 			Server::Listen();
 			Server::Initialize();
+			ActorHandler::Initialize();
+
+			auto Lake2 = StaticFindObject<ABuildingFoundation>(L"/Game/Athena/Maps/Athena_POI_Foundations.Athena_POI_Foundations.PersistentLevel.LF_Lake2");
+			auto FloatingIsland = StaticFindObject<ABuildingFoundation>(L"/Game/Athena/Maps/Athena_POI_Foundations.Athena_POI_Foundations.PersistentLevel.LF_FloatingIsland");
+
+			Utils::ShowFoundation(Lake2);
+			Utils::ShowFoundation(FloatingIsland);
+
+			auto IslandScripting = Utils::GetIslandScripting();
+
+			if (IslandScripting)
+			{
+				auto UpdateMapProperty = StaticFindObject<UBoolProperty>(L"/Game/Athena/Prototype/Blueprints/Island/BP_IslandScripting.BP_IslandScripting_C.UpdateMap");
+				if (UpdateMapProperty)
+				{
+					Logging::Log(ELogEvent::Info, ELogType::Athena, "UpdateMapProperty Offset: 0x%.8x", UpdateMapProperty->Offset);
+
+					*(bool*)(__int64(IslandScripting) + UpdateMapProperty->Offset) = true;
+
+					auto OnRep_UpdateMapFn = StaticFindObject<UFunction>(L"/Game/Athena/Prototype/Blueprints/Island/BP_IslandScripting.BP_IslandScripting_C.OnRep_UpdateMap");
+					IslandScripting->ProcessEvent(OnRep_UpdateMapFn, nullptr);
+				}
+			}
 		}
 		GameMode->bWorldIsReady = true;
 
