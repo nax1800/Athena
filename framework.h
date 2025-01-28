@@ -20,6 +20,8 @@ using namespace SDK;
 #include "Memory.h"
 #include "Logging.h"
 
+#include "Frame.h"
+
 template <typename T>
 T* StaticFindObject(wstring ObjectName, UClass* ObjectClass = nullptr)
 {
@@ -42,6 +44,10 @@ static T* StaticLoadObject(wstring ObjectName, UClass* ObjectClass = nullptr)
 
 #include "Inventory.h"
 
+
 #include "Abilities.h"
+
+#include "AI.h"
 #include "GameMode.h"
 #include "PlayerController.h"
+#include "Quests.h"

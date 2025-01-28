@@ -9,9 +9,10 @@ namespace PlayerController
 		auto PlayerState = static_cast<AFortPlayerStateAthena*>(PlayerController->PlayerState);
 		auto FortPawn = static_cast<APlayerPawn_Athena_C*>(Pawn);
 
-		PlayerController->AcknowledgedPawn = FortPawn;
 		if (!PlayerState || !FortPawn)
 			return;
+
+		PlayerController->AcknowledgedPawn = FortPawn;
 
 		auto& CustomizationLoadout = PlayerController->CustomizationLoadout;
 
@@ -30,18 +31,18 @@ namespace PlayerController
 	void (*oServerReadyToStartMatch)(AFortPlayerControllerAthena* PlayerController);
 	void hkServerReadyToStartMatch(AFortPlayerControllerAthena* PlayerController)
 	{
-		if (PlayerController)
-		{
-			auto PlayerState = static_cast<AFortPlayerStateAthena*>(PlayerController->PlayerState);
-			if (PlayerState)
-			{
-				AbilitiesHandler::ApplyAbilities(PlayerState);
+		if (!PlayerController)
+			return oServerReadyToStartMatch(PlayerController);
 
-				PlayerState->SquadId = (int)PlayerState->TeamIndex - 2;
-				PlayerState->OnRep_PlayerTeam();
-				PlayerState->OnRep_SquadId();
-			}
-		}
+		auto PlayerState = static_cast<AFortPlayerStateAthena*>(PlayerController->PlayerState);
+		if (!PlayerState)
+			return oServerReadyToStartMatch(PlayerController);
+
+		AbilitiesHandler::ApplyAbilities(PlayerState);
+
+		PlayerState->SquadId = (int)PlayerState->TeamIndex - 2;
+		PlayerState->OnRep_PlayerTeam();
+		PlayerState->OnRep_SquadId();
 
 		return oServerReadyToStartMatch(PlayerController);
 	}
@@ -84,6 +85,9 @@ namespace PlayerController
 	void (*oEnterAircraft)(AFortPlayerControllerAthena* PlayerController, unsigned __int64 a2);
 	void hkEnterAircraft(AFortPlayerControllerAthena* PlayerController, unsigned __int64 a2)
 	{
+		if (!PlayerController)
+			return oEnterAircraft(PlayerController, a2);
+
 		TArray<FFortItemEntry>& ReplicatedEntries = PlayerController->WorldInventory->Inventory.ReplicatedEntries;
 		for (int i = 0; i < ReplicatedEntries.Num(); i++)
 		{
@@ -103,10 +107,10 @@ namespace PlayerController
 		Memory::VirtualHook(DefaultObject, 0x254, hkServerLoadingScreenDropped, (void**)&oServerLoadingScreenDropped);
 		Memory::VirtualHook(DefaultObject, 0x1f4, hkServerExecuteInventoryItem);
 
-		MH_STATUS StatusEnterAircraft = Memory::CreateHook(Memory::GetAddress(0xcd81a0), hkEnterAircraft, (void**)&oEnterAircraft);
+		//MH_STATUS StatusEnterAircraft = Memory::CreateHook(Memory::GetAddress(0xcd81a0), hkEnterAircraft, (void**)&oEnterAircraft);
 
 #ifdef LOG_HOOKSTATUS
-		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkEnterAircraft Status: %s.", MH_StatusToString(StatusEnterAircraft));
+		//Logging::Log(ELogEvent::Info, ELogType::Hook, "hkEnterAircraft Status: %s.", MH_StatusToString(StatusEnterAircraft));
 #endif
 		
 

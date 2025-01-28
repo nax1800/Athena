@@ -15,7 +15,8 @@ enum ELogType : uint8_t
     Kismet = 6,
     Hook = 7,
     Athena = 8,
-    ProcessEvent = 9
+    ProcessEvent = 9,
+    Quests = 10
 };
 
 enum ELogEvent : uint8_t
@@ -46,7 +47,8 @@ namespace Logging
         case ELogType::Hook: return "LogHook";
         case ELogType::Athena: return "LogAthena";
         case ELogType::ProcessEvent: return "LogProcessEvent";
-        default: return "LogUnknown";
+        case ELogType::Quests: return "LogQuests";
+        default: return "Log";
         }
     }
 

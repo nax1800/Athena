@@ -37,5 +37,17 @@ namespace Memory
 		VirtualProtect(&vft[Index], 8, oldProtection, NULL);
 	}
 
-	// Add Exec Hook
+	static void* nullptrForHook = nullptr;
+
+	template <typename T = void*>
+	static void ExecHook(UFunction* func, void* detour, T& og = nullptrForHook)
+	{
+		if (!func)
+			return;
+
+		if (!is_same_v<T, void*>)
+			og = (T)func->ExecFunction;
+
+		func->ExecFunction = reinterpret_cast<UFunction::FNativeFuncPtr>(detour);
+	}
 }

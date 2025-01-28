@@ -252,6 +252,13 @@ namespace InventoryHandler // for now as a symbol with this name already exists 
 		AddItem(PlayerController, PlayerController->CustomizationLoadout.Pickaxe->WeaponDefinition, 1);
 
 		TArray<FItemAndCount> StartingItems = Globals::GetGameMode()->StartingItems;
+
+		if (!StartingItems.IsValid()) // Logging purposes
+		{
+			Logging::Log(ELogEvent::Error, ELogType::Game, "StartingItems is not valid!");
+			return;
+		}
+
 		for (int i = 0; i < StartingItems.Num(); i++)
 		{
 			FItemAndCount StartingItem = StartingItems[i];

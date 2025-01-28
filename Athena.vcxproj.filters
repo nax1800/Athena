@@ -23,6 +23,11 @@
       <Filter>Hooks</Filter>
     </ClInclude>
     <ClInclude Include="Inventory.h" />
+    <ClInclude Include="Quests.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Frame.h" />
+    <ClInclude Include="AI.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />

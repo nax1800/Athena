@@ -18,19 +18,30 @@ namespace GameMode
 				Logging::Log(ELogEvent::Info, ELogType::Athena, "Playlist: %s", Playlist->UIDisplayName.ToString().c_str());
 
 				GameState->CurrentPlaylistId = Playlist->PlaylistId;
-				GameState->CurrentPlaylistInfo.BasePlaylist = Playlist;
-				GameState->CurrentPlaylistInfo.OverridePlaylist = Playlist;
-				GameState->CurrentPlaylistInfo.PlaylistReplicationKey++;
+				FPlaylistPropertyArray& PlaylistInfo = GameState->CurrentPlaylistInfo;
+				PlaylistInfo.BasePlaylist = Playlist;
+				PlaylistInfo.OverridePlaylist = Playlist;
+				PlaylistInfo.PlaylistReplicationKey++;
+				PlaylistInfo.MarkArrayDirty();
+
+				GameMode->CurrentPlaylistName = Playlist->PlaylistName;
+				GameMode->CurrentPlaylistId = Playlist->PlaylistId;
+
 				GameState->OnRep_CurrentPlaylistId();
 				GameState->OnRep_CurrentPlaylistInfo();
 
 				GameState->FriendlyFireType = Playlist->FriendlyFireType;
 
-				GameMode->CurrentPlaylistId = Playlist->PlaylistId;
-				GameMode->CurrentPlaylistName = Playlist->PlaylistName;
-
 				GameMode->FortGameSession->MaxPlayers = Playlist->MaxPlayers;
 				GameMode->FortGameSession->MaxPartySize = Playlist->MaxSocialPartySize;
+
+				if (!Globals::bUseBeacons) // No idea why it does this tbh
+				{
+					Logging::Log(ELogEvent::Info, ELogType::Game, "GamePhase set to 'Setup'");
+					EAthenaGamePhase OldGamePhase = GameState->GamePhase;
+					GameState->GamePhase = EAthenaGamePhase::Setup;
+					GameState->OnRep_GamePhase(OldGamePhase);
+				}
 			}
 			else
 				Logging::Log(ELogEvent::Error, ELogType::Athena, "Playlist is null.");
@@ -38,6 +49,9 @@ namespace GameMode
 
 		if (!GameState->MapInfo)
 			return false;
+
+
+		GameMode->DefaultPawnClass = SDK::APlayerPawn_Athena_C::StaticClass();
 
 		if (!Globals::bIsServerListening)
 		{
@@ -64,6 +78,10 @@ namespace GameMode
 	{
 		return 3;
 	}
+
+	/*
+		Deciding whether to do proper game sessions or nah.
+	*/
 
 	void Initialize()
 	{

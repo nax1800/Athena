@@ -35,10 +35,7 @@ namespace AbilitiesHandler // for now as a symbol with this name already exists 
         UGameplayAbility* InstancedAbility = nullptr;
         Spec->InputPressed = true;
 
-        if (InternalTryActivateAbility(ASc, Handle, PredictionKey, &InstancedAbility, nullptr, TriggerEventData))
-        {
-        }
-        else
+        if (!InternalTryActivateAbility(ASc, Handle, PredictionKey, &InstancedAbility, nullptr, TriggerEventData))
         {
             ASc->ClientActivateAbilityFailed(Handle, PredictionKey.Current);
             Spec->InputPressed = false;

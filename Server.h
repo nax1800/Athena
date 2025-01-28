@@ -10,8 +10,6 @@ namespace Server
 	static void (*PauseBeaconRequests)(UObject* Beacon, bool bPause) = decltype(PauseBeaconRequests)(Memory::GetAddress(0x1149920));
 	static void (*ReplicateActors)(UReplicationDriver* a1);
 
-	static void (*oTickFlush)(UNetDriver* a1);
-
 	void Listen()
 	{
 		if (Globals::bIsServerListening)
@@ -38,17 +36,15 @@ namespace Server
 			NetDriver = Beacon->NetDriver;
 		}
 		else
-		{
 			NetDriver = CreateNetDriver(UEngine::GetEngine(), World, FName(282));
-		}
 
 		if (!NetDriver)
 		{
 			Logging::Log(ELogEvent::Error, ELogType::Athena, "NetDriver failed to create.");
 			return;
 		}
-		else
-			Logging::Log(ELogEvent::Info, ELogType::Athena, "NetDriver successfully created. (%s)", NetDriver->GetFullName().c_str());
+			
+		Logging::Log(ELogEvent::Info, ELogType::Athena, "NetDriver successfully created. (%s)", NetDriver->GetFullName().c_str());
 
 		World->NetDriver = NetDriver;
 		NetDriver->World = World;
@@ -67,9 +63,13 @@ namespace Server
 		auto vft = *(void***)NetDriver->ReplicationDriver;
 		ReplicateActors = decltype(ReplicateActors)(vft[0x56]);
 
+		if (NetDriver->MaxInternetClientRate < NetDriver->MaxClientRate && NetDriver->MaxInternetClientRate > 2500)
+			NetDriver->MaxClientRate = NetDriver->MaxInternetClientRate;
+
 		Logging::Log(ELogEvent::Info, ELogType::Athena, "Server::Listen: Server Listening on port %i", Globals::Port);
 	}
 
+	void (*oTickFlush)(UNetDriver* a1);
 	void hkTickFlush(UNetDriver* a1)
 	{
 		if (a1 && a1->ReplicationDriver && a1->ClientConnections.Num() > 0 && !a1->ClientConnections[0]->InternalAck)
@@ -78,7 +78,7 @@ namespace Server
 		return oTickFlush(a1);
 	}
 
-	__int64 hkUWorld_GetNetMode(UWorld* a1)
+	__int64 hkGetNetMode(UWorld*)
 	{
 		return 1;
 	}
@@ -113,20 +113,15 @@ namespace Server
 		return 30.f;
 	}
 
-	auto hkChangeGameSessionId()
-	{
-		return NULL;
-	}
-
 	void Initialize()
 	{
 		Memory::CreateHook(Memory::GetAddress(0x27e36a0), hkTickFlush, (void**)&oTickFlush);
 		Memory::CreateHook(Memory::GetAddress(0x26a2e00), hkKickPlayer);
-		// Memory::CreateHook(Memory::GetAddress(0x25151d0), hkCollectGarbage);
-		Memory::CreateHook(Memory::GetAddress(0x35b57b76), hkUWorld_GetNetMode);
+		Memory::CreateHook(Memory::GetAddress(0x5f4cc22), hkCollectGarbage);
+		Memory::CreateHook(Memory::GetAddress(0x35b57b76), hkGetNetMode);
+		// Memory::CreateHook(Memory::GetAddress(0x2470ca0), hkActorGetNetMode);
 		Memory::CreateHook(Memory::GetAddress(0x96e200), hkDispatchRequest, (void**)&oDispatchRequest);
 		Memory::CreateHook(Memory::GetAddress(0x2a62bb0), hkGetMaxTickRate);
-		Memory::CreateHook(Memory::GetAddress(0xf89d40), hkChangeGameSessionId);
 		Memory::CreateHook(Memory::GetAddress(0xfb7e40), hkNoMCP);
 	}
 }

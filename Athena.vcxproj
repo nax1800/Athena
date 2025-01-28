@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="6_31|Win32">
+      <Configuration>6_31</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="6_31|x64">
+      <Configuration>6_31</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
       <Platform>Win32</Platform>
@@ -51,6 +59,12 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='6_31|Win32'">
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='6_31|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -142,6 +156,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Abilities.h" />
+    <ClInclude Include="AI.h" />
+    <ClInclude Include="Frame.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="GameMode.h" />
     <ClInclude Include="Globals.h" />
@@ -150,6 +166,7 @@
     <ClInclude Include="Memory.h" />
     <ClInclude Include="MinHook\include\MinHook.h" />
     <ClInclude Include="PlayerController.h" />
+    <ClInclude Include="Quests.h" />
     <ClInclude Include="SDK.hpp" />
     <ClInclude Include="Server.h" />
     <ClInclude Include="Spawner.h" />

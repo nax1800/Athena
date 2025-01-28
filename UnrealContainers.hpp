@@ -228,8 +228,8 @@ namespace UC
 
 	namespace FMemory
 	{
-		static inline void (*Free)(void* Array) = decltype(Free)(__int64(GetModuleHandle(0)) + 0x1737d50);
-		static inline void* (*Realloc)(void*, __int64, unsigned int) = decltype(Realloc)(__int64(GetModuleHandle(0)) + 0x1745b10);
+		static inline void (*Free)(void* Array) = decltype(Free)((uintptr_t)GetModuleHandle(0) + 0x1737d50);
+		static inline void* (*Realloc)(void* Original, SIZE_T Count, uint32_t Alignment) = decltype(Realloc)((uintptr_t)GetModuleHandle(0) + 0x1745b10);
 	}
 
 	template<typename ArrayElementType>

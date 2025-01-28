@@ -30,9 +30,7 @@ DWORD Initialize(LPVOID)
     SetConsoleTitleA("Athena - 6.31");
 
     if (filesystem::exists("Athena.txt"))
-    {
         filesystem::remove("Athena.txt");
-    }
 
     Logging::Log(ELogEvent::Info, ELogType::Athena, "Made by @nax1800 and @ApfelTeeSaft.");
 
@@ -54,8 +52,8 @@ DWORD Initialize(LPVOID)
   //  *(uint8_t*)(Memory::GetAddress(0x255BB17) + 7) = 0x74;
   //  Logging::Log(ELogEvent::Info, ELogType::Athena, "Matchmaking should now be supported.");
 
-    UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"open Athena_Terrain", nullptr);
-    UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
+    UKismetSystemLibrary::ExecuteConsoleCommand(Globals::GetWorld(), L"open Athena_Terrain", nullptr);
+    Globals::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
 
     for (uintptr_t FuncToNull : vector{ 0xd16310, 0x233bd47, 0xf89d40, 0x12f4fe0 })
     {
@@ -81,6 +79,8 @@ DWORD Initialize(LPVOID)
 
     *(bool*)Memory::GetAddress(0x5634b5b) = false;
     Logging::Log(ELogEvent::Info, ELogType::Athena, "GIsClient should now be false.");
+    *(bool*)Memory::GetAddress(0x5634b5c) = true;
+    Logging::Log(ELogEvent::Info, ELogType::Athena, "GIsServer should now be true.");
 
 #ifdef LOG_PROCESSEVENT
     Memory::CreateHook(Memory::GetAddress(Offsets::ProcessEvent), hkProcessEvent, (void**)&oProcessEvent);
@@ -90,6 +90,7 @@ DWORD Initialize(LPVOID)
     AbilitiesHandler::Initialize();
     GameMode::Initialize();
     PlayerController::Initialize();
+    QuestsHandler::Initialize();
 }
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ulReason, LPVOID lpReserved)
