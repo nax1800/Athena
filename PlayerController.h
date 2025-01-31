@@ -17,7 +17,7 @@ namespace PlayerController
 
 		PlayerController->AcknowledgedPawn = FortPawn;
 
-		if (Globals::bNoMCP)
+		if (Globals::bNoMCP || PlayerState->bIsABot)
 		{
 			static auto HeadPart = StaticFindObject<UCustomCharacterPart>(L"/Game/Characters/CharacterParts/Female/Medium/Heads/F_Med_Head1.F_Med_Head1");
 			static auto BodyPart = StaticFindObject<UCustomCharacterPart>(L"/Game/Characters/CharacterParts/Female/Medium/Bodies/F_Med_Soldier_01.F_Med_Soldier_01");
@@ -59,13 +59,33 @@ namespace PlayerController
 		PlayerState->OnRep_PlayerTeam();
 		PlayerState->OnRep_SquadId();
 
+		if (!Globals::bIsFloorLootSpawned)
+		{
+			Globals::bIsFloorLootSpawned = true;
+		//	Looting::SpawnFloorLoot();
+			auto PlayerStarts = Utils::GetActorsOfClass(APlayerStart::StaticClass());
+			if (PlayerStarts.IsValid())
+			{
+				for (int i = 0; i < AI::BotsToSpawn;)
+				{
+					auto PlayerStart = PlayerStarts[rand() % PlayerStarts.Num()];
+					if (PlayerStart)
+					{
+						AI::SpawnBot(PlayerStart->K2_GetActorLocation());
+						i++;
+					}
+				}
+			}
+		}
+
 		return oServerReadyToStartMatch(PlayerController);
 	}
 
 	void (*oServerLoadingScreenDropped)(AFortPlayerControllerAthena* PlayerController);
 	void hkServerLoadingScreenDropped(AFortPlayerControllerAthena* PlayerController)
 	{
-		InventoryHandler::Setup(PlayerController);
+		if (!reinterpret_cast<AFortPlayerStateAthena*>(PlayerController->PlayerState)->bIsABot)
+			InventoryHandler::Setup(PlayerController);
 
 		return oServerLoadingScreenDropped(PlayerController);
 	}
@@ -101,7 +121,7 @@ namespace PlayerController
 	void (*oEnterAircraft)(AFortPlayerControllerAthena* PlayerController, unsigned __int64 a2);
 	void hkEnterAircraft(AFortPlayerControllerAthena* PlayerController, unsigned __int64 a2)
 	{
-		if (!PlayerController)
+		if (!PlayerController || reinterpret_cast<AFortPlayerStateAthena*>(PlayerController->PlayerState)->bIsABot)
 			return oEnterAircraft(PlayerController, a2);
 
 		TArray<FFortItemEntry>& ReplicatedEntries = PlayerController->WorldInventory->Inventory.ReplicatedEntries;
@@ -221,6 +241,113 @@ namespace PlayerController
 		EditTool->OnRep_EditActor();
 	}
 
+	void hkServerPlayEmoteItem(AFortPlayerController* PlayerController, UFortMontageItemDefinitionBase* EmoteAsset)
+	{
+		if (!PlayerController || !EmoteAsset)
+			return;
+
+		auto PlayerState = static_cast<AFortPlayerStateAthena*>(PlayerController->PlayerState);
+		auto Pawn = static_cast<APlayerPawn_Athena_C*>(PlayerController->Pawn);
+
+		if (!PlayerState || !Pawn)
+			return;
+
+		UFortAbilitySystemComponent* AbilitySystemComponent = PlayerState->AbilitySystemComponent;
+
+		static UObject* AbilityToUse = UGAB_Emote_Generic_C::StaticClass()->DefaultObject;
+		bool bShouldBeAbilityToUse = false;
+
+		FGameplayAbilitySpec Spec{};
+		AbilitiesHandler::SpecConstructor(&Spec, AbilityToUse, 1, -1, EmoteAsset);
+		AbilitiesHandler::oGiveAbilityAndActivateOnce(AbilitySystemComponent, &Spec.Handle, Spec);
+	}
+
+	static void (*RemoveFromAlivePlayers)(AFortGameModeAthena* GameMode, AFortPlayerController* PlayerController, APlayerState* PlayerState, APawn* FinisherPawn, UFortWeaponItemDefinition* FinishingWeapon, uint8_t DeathCause, char a7) = decltype(RemoveFromAlivePlayers)(Memory::GetAddress(0xcb5360));
+	void (*oClientOnPawnDied)(AFortPlayerControllerZone*, FFortPlayerDeathReport);
+	void hkClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFortPlayerDeathReport DeathReport)
+	{
+		if (!PlayerController)
+			return;
+
+		auto DeadPawn = static_cast<AFortPlayerPawnAthena*>(PlayerController->Pawn);
+		auto DeadPlayerState = static_cast<AFortPlayerStateAthena*>(PlayerController->PlayerState);
+		auto KillerPlayerState = static_cast<AFortPlayerStateAthena*>(DeathReport.KillerPlayerState);
+		auto KillerPawn = static_cast<AFortPlayerPawnAthena*>(DeathReport.KillerPawn);
+		if (!DeadPawn || !DeadPlayerState)
+			return oClientOnPawnDied(PlayerController, DeathReport);
+
+		if (KillerPawn && KillerPlayerState && KillerPlayerState != DeadPlayerState)
+		{
+			KillerPlayerState->KillScore++;
+			KillerPlayerState->ClientReportKill(DeadPlayerState);
+			KillerPlayerState->OnRep_Kills();
+		}
+		
+		FDeathInfo DeathData;
+		DeathData.bDBNO = DeadPawn->IsDBNO();
+		DeathData.DeathLocation = DeadPawn->K2_GetActorLocation();
+		DeathData.Distance = DeathReport.KillerPawn ? DeathReport.KillerPawn->GetDistanceTo(DeadPawn) : 0;
+		DeathData.DeathCause = DeadPlayerState->ToDeathCause(DeathReport.Tags, false);
+		DeathData.FinisherOrDowner = KillerPlayerState ? KillerPlayerState : DeadPlayerState;
+
+		DeadPlayerState->DeathInfo = DeathData;
+		DeadPlayerState->OnRep_DeathInfo();
+
+		if (DeadPawn->IsDBNO())
+			return oClientOnPawnDied(PlayerController, DeathReport);
+
+		oClientOnPawnDied(PlayerController, DeathReport);
+
+		AActor* DamageCauser = DeathReport.DamageCauser;
+		UFortWeaponItemDefinition* KillerWeaponDef = nullptr;
+
+		AFortInventory* WorldInventory = PlayerController->WorldInventory;
+		if (WorldInventory)
+		{
+			auto& ReplicatedEntries = WorldInventory->Inventory.ReplicatedEntries;
+			if (ReplicatedEntries.IsValid())
+			{
+				for (int i = 0; i < ReplicatedEntries.Num(); i++)
+				{
+					if (ReplicatedEntries.IsValidIndex(i))
+					{
+						if (auto ItemDefinition = static_cast<UFortWorldItemDefinition*>(ReplicatedEntries[i].ItemDefinition))
+						{
+							if (ItemDefinition->bCanBeDropped)
+								Utils::SpawnPickup(ItemDefinition, ReplicatedEntries[i].Count, ReplicatedEntries[i].LoadedAmmo, DeadPawn->K2_GetActorLocation(), DeadPawn);
+						}
+					}
+				}
+			}
+		}
+
+		if (DeathData.DeathCause != EDeathCause::Unspecified && DeathData.DeathCause != EDeathCause::FallDamage && DeathData.DeathCause != EDeathCause::OutsideSafeZone && DamageCauser)
+		{
+			if (DamageCauser->IsA(AFortProjectileBase::StaticClass()))
+			{
+				auto ProjectileBase = static_cast<AFortProjectileBase*>(DamageCauser);
+				if (Utils::IsValidLowLevel(ProjectileBase->Owner))
+				{
+					auto Weapon = static_cast<AFortWeapon*>(ProjectileBase->Owner);
+					if (Weapon->WeaponData)
+						KillerWeaponDef = Weapon->WeaponData;
+				}
+			}
+			else
+			{
+
+				if (auto Weapon = static_cast<AFortWeapon*>(DamageCauser))
+				{
+					KillerWeaponDef = Weapon->WeaponData;
+				}
+			}
+		}
+
+		RemoveFromAlivePlayers(Globals::GetGameMode(), PlayerController, KillerPlayerState == DeadPlayerState ? nullptr : KillerPlayerState, KillerPawn, KillerWeaponDef, (int)DeathData.DeathCause, 0);
+		PlayerController->bMarkedAlive = false;
+	}
+
+
 	void Initialize()
 	{
 		auto DefaultObject = AAthena_PlayerController_C::GetDefaultObj();
@@ -233,11 +360,14 @@ namespace PlayerController
 		Memory::VirtualHook(DefaultObject, 0x214, hkServerEditBuildingActor, (void**)&oServerEditBuildingActor);
 		Memory::VirtualHook(DefaultObject, 0x218, hkServerBeginEditingBuildingActor);
 		Memory::VirtualHook(DefaultObject, 0x216, hkServerEndEditingBuildingActor);
+		Memory::VirtualHook(DefaultObject, 0x1b8, hkServerPlayEmoteItem);
 
 		MH_STATUS StatusEnterAircraft = Memory::CreateHook(Memory::GetAddress(0xcd81a0), hkEnterAircraft, (void**)&oEnterAircraft);
+		MH_STATUS StatusClientOnPawnDied = Memory::CreateHook(Memory::GetAddress(0x1642b40), hkClientOnPawnDied, (void**)&oClientOnPawnDied);
 
 #ifdef LOG_HOOKSTATUS
 		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkEnterAircraft Status: %s.", MH_StatusToString(StatusEnterAircraft));
+		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkClientOnPawnDied Status: %s.", MH_StatusToString(StatusClientOnPawnDied));
 #endif
 		
 

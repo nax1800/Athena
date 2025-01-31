@@ -69,11 +69,22 @@ namespace Server
 		Logging::Log(ELogEvent::Info, ELogType::Athena, "Server::Listen: Server Listening on port %i", Globals::Port);
 	}
 
+	APlayerPawn_Athena_C* Bot = nullptr;
+
 	void (*oTickFlush)(UNetDriver* a1);
 	void hkTickFlush(UNetDriver* a1)
 	{
 		if (a1 && a1->ReplicationDriver && a1->ClientConnections.Num() > 0 && !a1->ClientConnections[0]->InternalAck)
 			Server::ReplicateActors(a1->ReplicationDriver);
+
+		if (GetAsyncKeyState(VK_F6) & 0x01)
+		{
+			auto Pawn = Utils::GetActorOfClass<APlayerPawn_Athena_C>(APlayerPawn_Athena_C::StaticClass());
+			if (Pawn)
+			{
+				Bot = AI::SpawnBot(Pawn->K2_GetActorLocation() + FVector(10, 0, 10));
+			}
+		}
 
 		return oTickFlush(a1);
 	}

@@ -164,8 +164,10 @@
     <ClInclude Include="Globals.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="Logging.h" />
+    <ClInclude Include="Looting.h" />
     <ClInclude Include="Memory.h" />
     <ClInclude Include="MinHook\include\MinHook.h" />
+    <ClInclude Include="Pawn.h" />
     <ClInclude Include="PlayerController.h" />
     <ClInclude Include="Quests.h" />
     <ClInclude Include="SDK.hpp" />
@@ -180,6 +182,7 @@
     <ClCompile Include="MinHook\src\hde\hde64.c" />
     <ClCompile Include="MinHook\src\hook.c" />
     <ClCompile Include="MinHook\src\trampoline.c" />
+    <ClCompile Include="SDK\AIModule_functions.cpp" />
     <ClCompile Include="SDK\Basic.cpp" />
     <ClCompile Include="SDK\CoreUObject_functions.cpp" />
     <ClCompile Include="SDK\Engine_functions.cpp" />

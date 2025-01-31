@@ -357,6 +357,19 @@ public:
 	{
 		return ComparisonIndex != Other.ComparisonIndex || Number != Other.Number;
 	}
+
+	bool operator<(const FName& Rhs) const
+	{
+		auto res = this->ComparisonIndex == Rhs.ComparisonIndex ? Number < Rhs.Number : this->ComparisonIndex < Rhs.ComparisonIndex;
+		return res;
+
+		if (ComparisonIndex == Rhs.ComparisonIndex)
+		{
+			return (Number - Rhs.Number) < 0;
+		}
+
+		return ComparisonIndex < Rhs.ComparisonIndex;
+	}
 };
 static_assert(alignof(FName) == 0x000004, "Wrong alignment on FName");
 static_assert(sizeof(FName) == 0x000008, "Wrong size on FName");

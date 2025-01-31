@@ -1,25 +1,62 @@
 #include "framework.h"
 
-#ifdef LOG_PROCESSEVENT
+#ifdef PROCESSEVENT
 
 void (*oProcessEvent)(UObject*, UFunction*, void*);
 void hkProcessEvent(UObject* InObject, UFunction* InFunction, void* InParameters)
 {
     if (!InObject || !InFunction)
-        return oProcessEvent(InObject, InFunction, InParamters);
+        return oProcessEvent(InObject, InFunction, InParameters);
 
     string ObjectName = InObject->GetFullName();
     string FunctionName = InFunction->GetFullName();
 
-    if (!FunctionName.contains("Tick"))
+    if (InFunction->GetName() == "ReceiveTick" && ObjectName.contains("Athena_PlayerController"))
     {
-        Logging::Log(ELogEvent::Info, ELogType::ProcessEvent, "Object (%s)  Function (%s)", ObjectName.c_str(), FunctionName.c_str());
+        auto PlayerController = reinterpret_cast<AAthena_PlayerController_C*>(InObject);
+        auto PlayerState = reinterpret_cast<AFortPlayerStateAthena*>(PlayerController->PlayerState);
+        if (!PlayerState->bIsABot)
+            return oProcessEvent(InObject, InFunction, InParameters);
+
+        auto Pawn = reinterpret_cast<APlayerPawn_Athena_C*>(PlayerController->Pawn);
+
+        if (PlayerController->bHasServerFinishedLoading)
+        {
+            if (Globals::GetGameState()->GamePhase == EAthenaGamePhase::Setup || Globals::GetGameState()->GamePhase == EAthenaGamePhase::Warmup)
+            {
+                if (!PlayerController->IsPlayingEmote())
+                {
+                    static vector<UAthenaDanceItemDefinition*> Emotes {
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_DiscoFever.EID_DiscoFever"),
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Twist.EID_Twist"),
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_BestMates.EID_BestMates"),
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Flapper.EID_Flapper"),
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_IrishJig.EID_IrishJig"),
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Robot.EID_Robot"),
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_RocketRodeo.EID_RocketRodeo"),
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Wiggle.EID_Wiggle"),
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_RockGuitar.EID_RockGuitar"),
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Worm.EID_Worm"),
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Fresh.EID_Fresh"),
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Floss.EID_Floss"),
+                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_ElectroShuffle.EID_ElectroShuffle")
+                    };
+                    auto Emote = Emotes[rand() % Emotes.size()];
+
+                    PlayerController->ServerPlayEmoteItem(Emote);
+                }
+            }
+            else
+            {
+
+            }
+        }
     }
 
-    return oProcessEvent(InObject, InFunction, InParamters);
+    return oProcessEvent(InObject, InFunction, InParameters);
 }
 
-#endif // LOG_PROCESSEVENT
+#endif // PROCESSEVENT
 
 
 DWORD Initialize(LPVOID)
@@ -29,8 +66,8 @@ DWORD Initialize(LPVOID)
     freopen_s(&File, "CONOUT$", "w+", stdout);
     SetConsoleTitleA("Athena - 6.31");
 
-    if (filesystem::exists("Athena.txt"))
-        filesystem::remove("Athena.txt");
+    if (filesystem::exists("Athena.log"))
+        filesystem::remove("Athena.log");
 
     Logging::Log(ELogEvent::Info, ELogType::Athena, "Made by @nax1800 and @ApfelTeeSaft.");
 
@@ -49,8 +86,8 @@ DWORD Initialize(LPVOID)
 
     Logging::Log(ELogEvent::Info, ELogType::Athena, "Globals::Port: %i", Globals::Port);
 
-  //  *(uint8_t*)(Memory::GetAddress(0x255BB17) + 7) = 0x74;
-  //  Logging::Log(ELogEvent::Info, ELogType::Athena, "Matchmaking should now be supported.");
+    *(uint8_t*)(Memory::GetAddress(0x2AC2E4E) + 7) = 0x74;
+    Logging::Log(ELogEvent::Info, ELogType::Athena, "Matchmaking should now be supported????");
 
     UKismetSystemLibrary::ExecuteConsoleCommand(Globals::GetWorld(), L"open Athena_Terrain", nullptr);
     Globals::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
@@ -82,14 +119,15 @@ DWORD Initialize(LPVOID)
     *(bool*)Memory::GetAddress(0x5634b5c) = true;
     Logging::Log(ELogEvent::Info, ELogType::Athena, "GIsServer should now be true.");
 
-#ifdef LOG_PROCESSEVENT
+#ifdef PROCESSEVENT
     Memory::CreateHook(Memory::GetAddress(Offsets::ProcessEvent), hkProcessEvent, (void**)&oProcessEvent);
-    Logging::Log(ELogEvent::Info, ELogType::Hook, "ProcessEvent Logging is enabled.");
-#endif // LOG_PROCESSEVENT
+    Logging::Log(ELogEvent::Info, ELogType::Hook, "ProcessEvent is enabled.");
+#endif // PROCESSEVENT
 
     AbilitiesHandler::Initialize();
     GameMode::Initialize();
     PlayerController::Initialize();
+    Pawn::Initialize();
     QuestsHandler::Initialize();
 }
 

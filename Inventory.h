@@ -214,15 +214,13 @@ namespace InventoryHandler // for now as a symbol with this name already exists 
 			itemEntry.Count = Count;
 			itemEntry.ItemDefinition = ItemDefinition;
 
-			// SpawnPickup(&itemEntry, Pawn->K2_GetActorLocation(), false, Pawn); i cba rn
+			Utils::SpawnPickup(&itemEntry, Pawn->K2_GetActorLocation(), false, EFortPickupSourceTypeFlag::Player, Pawn);
 			return FGuid(-1, -1, -1, -1);
 		}
 
 		UFortWorldItem* NewWorldItem = CreateItem(PlayerController, ItemDefinition, Count);
 		if (!NewWorldItem)
-		{
 			return FGuid(-1, -1, -1, -1);
-		}
 
 		NewWorldItem->ItemEntry.LoadedAmmo = LoadedAmmo;
 		if (ItemDefinition->MaxStackSize < Count)
@@ -249,15 +247,15 @@ namespace InventoryHandler // for now as a symbol with this name already exists 
 
 	void Setup(AFortPlayerControllerAthena* PlayerController)
 	{
-		AddItem(PlayerController, PlayerController->CustomizationLoadout.Pickaxe->WeaponDefinition, 1);
+		if (Globals::bNoMCP || reinterpret_cast<AFortPlayerStateAthena*>(PlayerController->PlayerState)->bIsABot)
+		{
+			static auto PickaxeWID = StaticFindObject<UFortWeaponMeleeItemDefinition>(L"/Game/Athena/Items/Weapons/WID_Harvest_Pickaxe_Athena_C_T01.WID_Harvest_Pickaxe_Athena_C_T01");
+			AddItem(PlayerController, PickaxeWID, 1);
+		}
+		else
+			AddItem(PlayerController, PlayerController->CustomizationLoadout.Pickaxe->WeaponDefinition, 1);
 
 		TArray<FItemAndCount> StartingItems = Globals::GetGameMode()->StartingItems;
-
-		if (!StartingItems.IsValid()) // Logging purposes
-		{
-			Logging::Log(ELogEvent::Error, ELogType::Game, "StartingItems is not valid!");
-			return;
-		}
 
 		for (int i = 0; i < StartingItems.Num(); i++)
 		{

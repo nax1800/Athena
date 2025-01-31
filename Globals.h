@@ -5,10 +5,11 @@ namespace Globals
 {
 	bool bUseBeacons = true;
 	bool bUseAccountID = false; // backend communication, etc...
-	bool bNoMCP = false;
+	bool bNoMCP = true;
 
 	bool bIsServerListening = false;
 	bool bIsPlaylistSetup = false;
+	bool bIsFloorLootSpawned = false;
 
 	int Port = 7777;
 

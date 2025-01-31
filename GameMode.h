@@ -11,10 +11,15 @@ namespace GameMode
 		if (!Globals::bIsPlaylistSetup)
 		{
 			Globals::bIsPlaylistSetup = true;
-
-			auto Playlist = StaticFindObject<UFortPlaylistAthena>(L"/Game/Athena/Playlists/Playlist_DefaultSolo.Playlist_DefaultSolo");
+			auto Playlist = GameMode->PlaylistManager->AthenaPlaylists[1];
 			if (Playlist)
 			{
+				for (int i = 0; i < GameMode->PlaylistManager->AthenaPlaylists.Num(); i++)
+				{
+					auto yh = GameMode->PlaylistManager->AthenaPlaylists[i];
+					Logging::Log(ELogEvent::Info, ELogType::Athena, "AthenaPlaylists: Index %i - %s", i, yh->GetFullName().c_str());
+				}
+
 				Logging::Log(ELogEvent::Info, ELogType::Athena, "Playlist: %s", Playlist->UIDisplayName.ToString().c_str());
 
 				GameState->CurrentPlaylistId = Playlist->PlaylistId;
@@ -65,22 +70,6 @@ namespace GameMode
 
 			Utils::ShowFoundation(Lake2);
 			Utils::ShowFoundation(FloatingIsland);
-
-			auto IslandScripting = Utils::GetIslandScripting();
-
-			if (IslandScripting)
-			{
-				auto UpdateMapProperty = StaticFindObject<UBoolProperty>(L"/Game/Athena/Prototype/Blueprints/Island/BP_IslandScripting.BP_IslandScripting_C.UpdateMap");
-				if (UpdateMapProperty)
-				{
-					Logging::Log(ELogEvent::Info, ELogType::Athena, "UpdateMapProperty Offset: 0x%.8x", UpdateMapProperty->Offset);
-
-					*(bool*)(__int64(IslandScripting) + UpdateMapProperty->Offset) = true;
-
-					auto OnRep_UpdateMapFn = StaticFindObject<UFunction>(L"/Game/Athena/Prototype/Blueprints/Island/BP_IslandScripting.BP_IslandScripting_C.OnRep_UpdateMap");
-					IslandScripting->ProcessEvent(OnRep_UpdateMapFn, nullptr);
-				}
-			}
 		}
 		GameMode->bWorldIsReady = true;
 

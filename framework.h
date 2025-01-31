@@ -6,6 +6,8 @@
 #include <string>
 #include <vector>
 #include <filesystem>
+#include <map>
+#include <numeric>
 
 #include "MinHook/include/MinHook.h"
 #include "SDK.hpp"
@@ -13,7 +15,7 @@
 using namespace std;
 using namespace SDK;
 
-// #define LOG_PROCESSEVENT
+#define PROCESSEVENT
 #define LOG_HOOKSTATUS
 
 
@@ -40,16 +42,19 @@ static T* StaticLoadObject(wstring ObjectName, UClass* ObjectClass = nullptr)
 
 #include "Spawner.h"
 
-#include "Server.h"
-
-#include "Inventory.h"
-
 #include "Utils.h"
 
+#include "Inventory.h"
 #include "Abilities.h"
 
 #include "AI.h"
+
+#include "Server.h"
+
+#include "Looting.h"
+
 #include "Actor.h"
 #include "GameMode.h"
 #include "PlayerController.h"
+#include "Pawn.h"
 #include "Quests.h"

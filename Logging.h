@@ -16,7 +16,8 @@ enum ELogType : uint8_t
     Hook = 7,
     Athena = 8,
     ProcessEvent = 9,
-    Quests = 10
+    Quests = 10,
+    Bot = 11
 };
 
 enum ELogEvent : uint8_t
@@ -48,6 +49,7 @@ namespace Logging
         case ELogType::Athena: return "LogAthena";
         case ELogType::ProcessEvent: return "LogProcessEvent";
         case ELogType::Quests: return "LogQuests";
+        case ELogType::Bot: return "LogAI";
         default: return "Log";
         }
     }
@@ -79,7 +81,7 @@ namespace Logging
 
         {
             std::lock_guard<std::mutex> lock(logMutex);
-            std::ofstream logFile("Athena.txt", std::ios::app);
+            std::ofstream logFile("Athena.log", std::ios::app);
             if (logFile.is_open())
             {
                 logFile << FullMessage;
