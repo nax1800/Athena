@@ -47,8 +47,25 @@ namespace AI
 		Pawn->OnRep_PawnUniqueID();
 
 		static vector<FString> BotNames{
-			L"SuperNax89", L"BlackSoy79", L"BlackHole9", L"GameMaster45", L"AthenaBot1", L"JimmyJim3"
+			L"SuperNax89", L"BlackSoy79", L"BlackHole9", L"GameMaster45", L"SuperPommes", L"JimmyJim3",
+			L"CyberHawk22", L"ShadowByte7", L"QuantumX99", L"SteelTitan42", L"NeonPhantom5", L"NovaStorm33",
+			L"EchoKnight17", L"RoboWolf66", L"PixelVortex8", L"HyperDrone12", L"TurboFalcon3", L"NanoStriker21",
+			L"MechaDoom44", L"GlitchWizard88", L"CyberPhantomX", L"SolarRanger5", L"OmegaPulse11", L"AlphaStorm77",
+			L"DarkPulse69", L"VortexShadow13", L"GhostRaider9", L"MechaRaptor10", L"BinaryKnight23", L"NeuralFury4",
+			L"StormByteX", L"EchoHunter37", L"CosmoDroid24", L"InfinityCore6", L"PlasmaWraith2", L"HavocBlazer15",
+			L"VoidSpecter99", L"CyberNexus8", L"TitanSurgeX", L"NeonSpectre19", L"StealthBot64", L"HyperRaider51",
+			L"GlitchMatrix9", L"MechaPhantom0", L"AlphaSentinel7", L"ShadowDroid88", L"NightVoltX3", L"BlitzDrone9",
+			L"RogueByte92", L"AeroCyber17", L"TechnoWarrior6", L"DarkStriker47", L"ZeroFusion21", L"PixelRogueX",
+			L"UltraNova50", L"SolarPhantom3", L"SteelRider10", L"EchoPulse7", L"QuantumGlitch9", L"StormHawk29",
+			L"NeonHunter66", L"MechaKnightX", L"InfinityVortex8", L"OmegaShadow99", L"CyberStorm23", L"NanoRaiderX",
+			L"CosmoPulse7", L"DarkMatterBot4", L"VoidHunter22", L"PlasmaByte8", L"NeuralSpecter3", L"HavocStorm9",
+			L"AlphaDroid77", L"BlitzSentinel12", L"HyperGlitchX", L"ShadowSurge6", L"BinaryGhost9", L"SteelSpectre5",
+			L"EchoVortex11", L"NovaRogue3", L"PlasmaHawkX", L"MechaStriker4", L"QuantumSentinel2", L"StormWraith7",
+			L"NeonRaider5", L"OmegaSpecter99", L"CyberRaptor12", L"NanoFusion88", L"CosmoShadow21", L"DarkVortexX",
+			L"VoidPulse6", L"PlasmaRogue9", L"NeuralHunter15", L"HavocKnight2", L"AlphaStorm44", L"BlitzWraithX",
+			L"HyperDroid7", L"ShadowPhantom11", L"BinaryRaider5", L"SteelHunter3", L"EchoSpectreX", L"NovaMatrix9"
 		};
+
 
 		if (BotNames.empty())
 		{
