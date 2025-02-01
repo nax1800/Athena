@@ -26,24 +26,8 @@ void hkProcessEvent(UObject* InObject, UFunction* InFunction, void* InParameters
             {
                 if (!PlayerController->IsPlayingEmote())
                 {
-                    static vector<UAthenaDanceItemDefinition*> Emotes {
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_DiscoFever.EID_DiscoFever"),
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Twist.EID_Twist"),
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_BestMates.EID_BestMates"),
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Flapper.EID_Flapper"),
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_IrishJig.EID_IrishJig"),
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Robot.EID_Robot"),
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_RocketRodeo.EID_RocketRodeo"),
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Wiggle.EID_Wiggle"),
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_RockGuitar.EID_RockGuitar"),
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Worm.EID_Worm"),
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Fresh.EID_Fresh"),
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_Floss.EID_Floss"),
-                        StaticFindObject<UAthenaDanceItemDefinition>(L"/Game/Athena/Items/Cosmetics/Dances/EID_ElectroShuffle.EID_ElectroShuffle")
-                    };
-                    auto Emote = Emotes[rand() % Emotes.size()];
-
-                    PlayerController->ServerPlayEmoteItem(Emote);
+                    auto bot = AI::GetBotByDisplayName(PlayerState->GetPlayerName());
+                    PlayerController->ServerPlayEmoteItem(bot.Loadout.AssignedEmote);
                 }
             }
             else

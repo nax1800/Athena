@@ -13,6 +13,8 @@ namespace Globals
 
 	int Port = 7777;
 
+	int BotsToSpawn = 6;
+
 	UFortEngine* GetEngine()
 	{
 		static auto Engine = UObject::FindObject<UFortEngine>("FortEngine Transient.FortEngine_2147482594");

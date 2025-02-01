@@ -66,12 +66,14 @@ namespace PlayerController
 			auto PlayerStarts = Utils::GetActorsOfClass(APlayerStart::StaticClass());
 			if (PlayerStarts.IsValid())
 			{
-				for (int i = 0; i < AI::BotsToSpawn;)
+				for (int i = 0; i < Globals::BotsToSpawn;)
 				{
 					auto PlayerStart = PlayerStarts[rand() % PlayerStarts.Num()];
 					if (PlayerStart)
 					{
-						AI::SpawnBot(PlayerStart->K2_GetActorLocation());
+						auto hero = StaticLoadObject<UFortHeroType>(L"/Game/Athena/Heroes/HID_080_Athena_Commando_M_Space.HID_080_Athena_Commando_M_Space");
+						auto bot = AI::AthenaBot(PlayerStart->K2_GetActorLocation(), AI::GetRandomBotName(), hero);
+						AI::Bots.push_back(bot);
 						i++;
 					}
 				}
