@@ -30,6 +30,7 @@ namespace Pawn
 		Pickup->OnRep_bPickedUp();
 	}
 
+	void (*oServerChoosePart)(AFortPlayerPawn* Pawn, EFortCustomPartType Part, UCustomCharacterPart* ChosenCharacterPart);
 	void hkServerChoosePart(AFortPlayerPawn* Pawn, EFortCustomPartType Part, UCustomCharacterPart* ChosenCharacterPart)
 	{
 		return;
@@ -65,14 +66,14 @@ namespace Pawn
 	{
 		auto DefaultObject = APlayerPawn_Athena_C::GetDefaultObj();
 
-		MH_STATUS StatusNetMulticast_Athena_BatchedDamageCues = Memory::CreateHook(Memory::GetAddress(0x1615a80), hkNetMulticast_Athena_BatchedDamageCues, (void**)&oNetMulticast_Athena_BatchedDamageCues);
+		MH_STATUS StatusNetMulticast_Athena_BatchedDamageCues = Memory::CreateHook(Memory::GetAddress(0x11b2b10), hkNetMulticast_Athena_BatchedDamageCues, (void**)&oNetMulticast_Athena_BatchedDamageCues);
 
 #ifdef LOG_HOOKSTATUS
 		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkNetMulticast_Athena_BatchedDamageCues Status: %s.", MH_StatusToString(StatusNetMulticast_Athena_BatchedDamageCues));
 #endif
 
-		Memory::VirtualHook(DefaultObject, 0x1ac, hkServerHandlePickup);
-		Memory::VirtualHook(DefaultObject, 0x19c, hkServerChoosePart);
+		Memory::VirtualHook(DefaultObject, 0x18f, hkServerHandlePickup);
+		Memory::VirtualHook(DefaultObject, 0x17f, hkServerChoosePart, (void**)&oServerChoosePart);
 
 		Logging::Log(ELogEvent::Info, ELogType::Hook, "Pawn hooks initialized.");
 	}

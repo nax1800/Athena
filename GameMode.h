@@ -39,14 +39,6 @@ namespace GameMode
 
 				GameMode->FortGameSession->MaxPlayers = Playlist->MaxPlayers;
 				GameMode->FortGameSession->MaxPartySize = Playlist->MaxSocialPartySize;
-
-				if (!Globals::bUseBeacons) // No idea why it does this tbh
-				{
-					Logging::Log(ELogEvent::Info, ELogType::Game, "GamePhase set to 'Setup'");
-					EAthenaGamePhase OldGamePhase = GameState->GamePhase;
-					GameState->GamePhase = EAthenaGamePhase::Setup;
-					GameState->OnRep_GamePhase(OldGamePhase);
-				}
 			}
 			else
 				Logging::Log(ELogEvent::Error, ELogType::Athena, "Playlist is null.");
@@ -64,12 +56,6 @@ namespace GameMode
 			Server::Listen();
 			Server::Initialize();
 			ActorHandler::Initialize();
-
-			auto Lake2 = StaticFindObject<ABuildingFoundation>(L"/Game/Athena/Maps/Athena_POI_Foundations.Athena_POI_Foundations.PersistentLevel.LF_Lake2");
-			auto FloatingIsland = StaticFindObject<ABuildingFoundation>(L"/Game/Athena/Maps/Athena_POI_Foundations.Athena_POI_Foundations.PersistentLevel.LF_FloatingIsland");
-
-			Utils::ShowFoundation(Lake2);
-			Utils::ShowFoundation(FloatingIsland);
 		}
 		GameMode->bWorldIsReady = true;
 
@@ -88,18 +74,23 @@ namespace GameMode
 
 	int hkPickTeam(AFortGameModeAthena* GameMode, uint8 preferredTeam, AActor* Controller)
 	{
-		return 3;
-	}
+		static int CurrentIndex = 3;
+		static int MaxTeamSize = Globals::GetGameState()->CurrentPlaylistInfo.OverridePlaylist->MaxTeamSize;
+		static int CurrentSize = 0;
 
-	/*
-		Deciding whether to do proper game sessions or nah.
-	*/
+		if (CurrentSize >= MaxTeamSize)
+			CurrentIndex++;
+
+		CurrentSize++;
+
+		return CurrentIndex;
+	}
 
 	void Initialize()
 	{
-		MH_STATUS StatusReadyToStartMatch = Memory::CreateHook(Memory::GetAddress(0xcb45a0), hkReadyToStartMatch, (void**)&oReadyToStartMatch);
-		MH_STATUS StatusSpawnDefaultPawnFor = Memory::CreateHook(Memory::GetAddress(0xcbb040), hkSpawnDefaultPawnFor);
-		MH_STATUS StatusPickTeam = Memory::CreateHook(Memory::GetAddress(0xcb0890), hkPickTeam);
+		MH_STATUS StatusReadyToStartMatch = Memory::CreateHook(Memory::GetAddress(0x25bac60), hkReadyToStartMatch, (void**)&oReadyToStartMatch);
+		MH_STATUS StatusSpawnDefaultPawnFor = Memory::CreateHook(Memory::GetAddress(0xa083a0), hkSpawnDefaultPawnFor);
+		MH_STATUS StatusPickTeam = Memory::CreateHook(Memory::GetAddress(0x9fe680), hkPickTeam);
 
 #ifdef LOG_HOOKSTATUS
 		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkReadyToStartMatch Status: %s.", MH_StatusToString(StatusReadyToStartMatch));

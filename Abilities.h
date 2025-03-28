@@ -3,10 +3,10 @@
 
 namespace AbilitiesHandler // for now as a symbol with this name already exists shit
 {
-    FGameplayAbilitySpecHandle* (*GiveAbility)(UAbilitySystemComponent* _this, FGameplayAbilitySpecHandle* outHandle, FGameplayAbilitySpec inSpec) = decltype(GiveAbility)(Memory::GetAddress(0x66cbc0));
-    __int64 (*oGiveAbilityAndActivateOnce)(void*, FGameplayAbilitySpecHandle*, FGameplayAbilitySpec) = decltype(oGiveAbilityAndActivateOnce)(Memory::GetAddress(0x66cce0));
-    bool (*InternalTryActivateAbility)(UAbilitySystemComponent* _this, FGameplayAbilitySpecHandle Handle, FPredictionKey InPredictionKey, UGameplayAbility** OutInstancedAbility, void* OnGameplayAbilityEndedDelegate, FGameplayEventData* TriggerEventData) = decltype(InternalTryActivateAbility)(Memory::GetAddress(0x66e370));
-    __int64 (*SpecConstructor)(FGameplayAbilitySpec* spec, UObject* Ability, int Level, int InputID, UObject* SourceObject) = decltype(SpecConstructor)(Memory::GetAddress(0x693000));
+    FGameplayAbilitySpecHandle* (*GiveAbility)(UAbilitySystemComponent* _this, FGameplayAbilitySpecHandle* outHandle, FGameplayAbilitySpec inSpec) = decltype(GiveAbility)(Memory::GetAddress(0x527580));
+    __int64 (*oGiveAbilityAndActivateOnce)(void*, FGameplayAbilitySpecHandle*, FGameplayAbilitySpec) = decltype(oGiveAbilityAndActivateOnce)(Memory::GetAddress(0x5276a0));
+    bool (*InternalTryActivateAbility)(UAbilitySystemComponent* _this, FGameplayAbilitySpecHandle Handle, FPredictionKey InPredictionKey, UGameplayAbility** OutInstancedAbility, void* OnGameplayAbilityEndedDelegate, FGameplayEventData* TriggerEventData) = decltype(InternalTryActivateAbility)(Memory::GetAddress(0x528b50));
+    __int64 (*SpecConstructor)(FGameplayAbilitySpec* spec, UObject* Ability, int Level, int InputID, UObject* SourceObject) = decltype(SpecConstructor)(Memory::GetAddress(0x103da30));
 
     FGameplayAbilitySpec* FindAbilitySpecFromHandle(UAbilitySystemComponent* AbilitySystemComponent, FGameplayAbilitySpecHandle Handle)
     {
@@ -108,7 +108,7 @@ namespace AbilitiesHandler // for now as a symbol with this name already exists 
     {
         auto DefaultObject = UFortAbilitySystemComponentAthena::StaticClass()->DefaultObject;
 
-        Memory::VirtualHook(DefaultObject, 0xf4, hkInternalServerTryActivateAbility);
+        Memory::VirtualHook(DefaultObject, 0xcb, hkInternalServerTryActivateAbility);
 
         Logging::Log(ELogEvent::Info, ELogType::Hook, "Abilities hooks initialized.");
     }

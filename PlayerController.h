@@ -355,17 +355,17 @@ namespace PlayerController
 		auto DefaultObject = AAthena_PlayerController_C::GetDefaultObj();
 
 		Memory::VirtualHook(DefaultObject, 0x104, hkServerAcknowledgePossession);
-		Memory::VirtualHook(DefaultObject, 0x252, hkServerReadyToStartMatch, (void**)&oServerReadyToStartMatch);
-		Memory::VirtualHook(DefaultObject, 0x254, hkServerLoadingScreenDropped, (void**)&oServerLoadingScreenDropped);
-		Memory::VirtualHook(DefaultObject, 0x1f4, hkServerExecuteInventoryItem);
-		Memory::VirtualHook(DefaultObject, 0x212, hkServerCreateBuildingActor);
-		Memory::VirtualHook(DefaultObject, 0x214, hkServerEditBuildingActor, (void**)&oServerEditBuildingActor);
-		Memory::VirtualHook(DefaultObject, 0x218, hkServerBeginEditingBuildingActor);
-		Memory::VirtualHook(DefaultObject, 0x216, hkServerEndEditingBuildingActor);
-		Memory::VirtualHook(DefaultObject, 0x1b8, hkServerPlayEmoteItem);
+		Memory::VirtualHook(DefaultObject, 0x241, hkServerReadyToStartMatch, (void**)&oServerReadyToStartMatch);
+		Memory::VirtualHook(DefaultObject, 0x243, hkServerLoadingScreenDropped, (void**)&oServerLoadingScreenDropped);
+		Memory::VirtualHook(DefaultObject, 0x1e5, hkServerExecuteInventoryItem);
+		Memory::VirtualHook(DefaultObject, 0x201, hkServerCreateBuildingActor);
+		Memory::VirtualHook(DefaultObject, 0x203, hkServerEditBuildingActor, (void**)&oServerEditBuildingActor);
+		Memory::VirtualHook(DefaultObject, 0x207, hkServerBeginEditingBuildingActor);
+		Memory::VirtualHook(DefaultObject, 0x205, hkServerEndEditingBuildingActor);
+		Memory::VirtualHook(DefaultObject, 0x1b3, hkServerPlayEmoteItem);
 
-		MH_STATUS StatusEnterAircraft = Memory::CreateHook(Memory::GetAddress(0xcd81a0), hkEnterAircraft, (void**)&oEnterAircraft);
-		MH_STATUS StatusClientOnPawnDied = Memory::CreateHook(Memory::GetAddress(0x1642b40), hkClientOnPawnDied, (void**)&oClientOnPawnDied);
+		MH_STATUS StatusEnterAircraft = Memory::CreateHook(Memory::GetAddress(0xa26d10), hkEnterAircraft, (void**)&oEnterAircraft);
+		MH_STATUS StatusClientOnPawnDied = Memory::CreateHook(Memory::GetAddress(0x11ac700), hkClientOnPawnDied, (void**)&oClientOnPawnDied);
 
 #ifdef LOG_HOOKSTATUS
 		Logging::Log(ELogEvent::Info, ELogType::Hook, "hkEnterAircraft Status: %s.", MH_StatusToString(StatusEnterAircraft));

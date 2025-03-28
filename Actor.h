@@ -176,8 +176,8 @@ namespace ActorHandler
 
     void Initialize()
     {
-        MH_STATUS StatusOnDamageServer = Memory::CreateHook(Memory::GetAddress(0x14aa5f0), hkOnDamageServer, (void**)&oOnDamageServer);
-		MH_STATUS StatusCompletePickupAnimation = Memory::CreateHook(Memory::GetAddress(0x109d390), hkCompletePickupAnimation, (void**)&oCompletePickupAnimation);
+        MH_STATUS StatusOnDamageServer = Memory::CreateHook(Memory::GetAddress(0x1076ec0), hkOnDamageServer, (void**)&oOnDamageServer);
+		MH_STATUS StatusCompletePickupAnimation = Memory::CreateHook(Memory::GetAddress(0xd01680), hkCompletePickupAnimation, (void**)&oCompletePickupAnimation);
 
 #ifdef LOG_HOOKSTATUS
         Logging::Log(ELogEvent::Info, ELogType::Hook, "hkOnDamageServer Status: %s.", MH_StatusToString(StatusOnDamageServer));
